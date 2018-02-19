@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cap1.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Josefin+Sans|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Ubuntu:400,500,700" rel="stylesheet">
+    <title>YesDavao!</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- HEADER / JUMBOTRON / CAROUSEL START -->
+	<div class="jumbotron jumbotron-fluid" id="header">
+	  <div class="container text-center">
+	    <h1 class="display-3">Explore Davao</h1>
+	    <p class="lead">Say <span id="font-red">yes</span> to new Adventures</p>
+	    <span><a href="tour-packages.html"><button type="button" class="btn btn-lg btn-primary">Tour Packages</button></a></span>
+	  </div>
+	</div>
+<!-- HEADER / JUMBOTRON / CAROUSEL END -->
+
+<!-- NAVBAR START -->
+<!-- SECONDARY NAV -->
+	<nav class="navbar navbar-default hidden-sm hidden-xs" id="secondary-nav">
+	  <div class="container-fluid">
+	      <form class="navbar-form navbar-right" id="nav-top">
+	  		<span>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">LOGIN</a>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">SIGN UP</a>
+	  		</span>
+	      </form>
+	  </div>
+	</nav>
+
+<!-- PRIMARY NAV -->
+	<nav class="navbar navbar-default" id="primary-nav">
+	  <div class="container-fluid" style="width: 90%;">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="home.html">
+	      	<img class="logo-nav" src="img/logo2.png">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="home.html">Home</a></li>
+	        <li><a href="tour-packages.html">Tour Packages</a></li>
+	        <li class="dropdown active">
+	          <a href="journals.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Journals <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="guides.html">Guides</a></li>
+	            <li><a href="journeys.html">Journeys</a></li>
+	            <li><a href="news.html">News</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="forum.html">Forum</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+	      </ul>
+
+			<form class="navbar-form navbar-right hidden-sm hidden-xs">
+		 		<div class="input-group" id="nav-search">
+				    <input type="text" class="form-control" placeholder="Search the website">
+				    <span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+		    	</div>
+		    </form>
+	        
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!-- NAVBAR END -->
+
+<!-- HEADER END -->
+
+	<div class="container" id="article">
+		<!-- <h1 class="title-page text-center">Guides</h1> -->
+		<hr>
+		<div class="row">
+<!-- BREADCRUMBS -->
+			<ol class="breadcrumb">
+			  <li><a href="#">YesDavao</a></li>
+			  <li><a href="#">Articles</a></li>
+			  <li><a href="#">Blogs</a></li>
+			  <li class="active">What to do in Davao? EAT EAT EAT!</li>
+			</ol>
+
+			<div class="article-title">
+				<h1>What to do in Davao? EAT EAT EAT!</h1>
+				<ul class="list-inline">
+					<li><img class="author-img img-thumbnail img-circle" src="img/articles/tpoint.jpg">
+					</li>
+					<li>
+						<div id="author" class="author-name">
+							<p>
+							<span class="label label-success label-lg">
+							Blog
+							</span>
+							<span class="label label-danger">
+							Travel
+							</span>
+							<br>
+							by GingerFerrer
+							<br>
+							February 11, 2016 <span class="fa fa-creative-commons"></span><a href="https://gingerscorner.travellerspoint.com">gingerscorner.travellerspoint.com</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<hr>
+			</div>
+
+			<div class="container col-lg-9 col-md-9 main-col">
+<!-- ARTICLE TITLE/HEADING -->
+				<div class="article-head">
+					<figure>
+						<img class="article-img img-responsive img-thumbnail" src="img/articles/food.jpg">
+						<figcaption class="caption">
+						<p>Travelling for business can also be a pleasure ... especially for your tastebuds! 
+						<a href="http://www.unsplash.com"><span class="fa fa-creative-commons"></span>unsplash.com</a></p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="article-main">
+
+					<p class="lead vertical-line">I visited the lovely Davao City and fell in love. My friends from Davao would usually boast how the people there are more disciplined than most, that the city was clean, no smoking policy was being implemented and followed by citizens, low crime rate, friendly and helpful people. They were absolutely right! </p>
+
+					<p>From the moment I stepped on Davao soil, I was impressed. They had an efficient airport system. Though my flight was delayed (2x mind you), it was easy breezy from touchdown onwards. My boss had me picked up from the airport and there was no traffic encountered even though I arrived at 7:40pm. Had I been in Manila, i would have gotten home past 11pm. But, this was Davao, and it took 15 minutes to get to the staff house at Woodridge. 1 point for Davao. 0 for Manila. </p>
+
+					<p>I was able to try a variety of restaurants and they were all superb. Value for money is at 10/10. Everything seemed cheaper to me in the food department as I could only compare it to the prices in Manila. Our group meals bill roughly amounted to only 60% of what we would have paid for the same amount of food back home. Some of these nice restos were Cocos, Hukad and Blue Posts Boiling Crabs and Lobsters. What I liked most about Blue Posts was that they let you write on the walls and ceilings. It brought back memories of highschool. </p>
+
+					<br>
+					<div class="container-fluid text-center">
+						<img class="img-responsive img-thumbnail img-width250" src="img/articles/article2a.jpg">
+						<img class="img-responsive img-thumbnail img-width250" src="img/articles/article2d.jpg">
+						<img class="img-responsive img-thumbnail img-width250" src="img/articles/article2b.jpg">
+					</div>
+					<br>
+
+					<p>We also visited a lovely place called Hilltop View Restaurant. They had small nipa huts set on ledge of a breath taking view of the city. The food was great. We ordered the boodle meal which had <em>inihaw na tilapia, sisig, inihaw na liempo, sinigang na hipon</em> and barbeque. Again, value for money was 10/10. </p>
+
+					<p>Another 10/10 item here was the mango cake by Rosarios. Absolute mango cream heaven goodness. </p>
+
+					<p>We also visited the Philippine Eagle Center, home of the Philippine Eagle. I was happy to find out that a lot of big companies sponsored the upkeep and maintenance of our national bird. </p>
+
+				</div> <!-- ARTICLE MAIN END -->
+<!-- SOCIAL ICONS AND CREDITS -->
+				<ul class="list-inline social-icons">
+					<li><p>Share: </p></li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-facebook"></a> 256</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-twitter"></a> 24</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-google"></a> 16</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-instagram"></a> 25</li>
+				</ul>
+				<div class="article-credits">
+					<p><a href="https://gingerscorner.travellerspoint.com/71/">
+					<span class="fa fa-creative-commons"></span> source: gingerscorner.travellerspoint.com
+					</a></p>
+				</div>
+				<hr>
+<!-- PAGINATION -->
+				<nav aria-label="true">
+				  <ul class="pager">
+				    <li class="previous"><a href="#">Previous</a></li>
+				    <li class="next"><a href="#">Next</a></li>
+				  </ul>
+				</nav>
+		
+			</div> <!-- MAIN COLUMN END -->
+
+<!-- RIGHT COLUMN START -->
+			<div class="col-lg-3 col-md-3 right-col" id="sidebar">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Join Our Newsletter</h4>
+					</div>
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<input type="email" class="form-control" placeholder="Email address"></input>
+						<button type="submit" class="btn btn-default btn-primary btn-sm margin-t10">Subscribe</button>
+					</div>
+				</div>
+
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Recent Entries</h4>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/article6aa.jpg">
+						</div>
+						<div>
+							<h4><a href="news1.html">Philippines' most picturesque volcano erupts</a></h4>
+							<p>Albay province, Philippines - Mt Mayon - famous for its majestic, near-perfect cone shape...</p>
+							<small>
+							<span class="fa fa-user"><a href="http://www.aljazeera.com/profile/ezra-acayan.html">&nbsp; Ezra Acayan</a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="news1.html">&nbsp; January 25, 2018</a></span>
+							</small>
+						</div>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/article3aa.jpeg">
+						</div>
+						<div>
+							<h4><a href="blog2.html">PURE JOY IN DAVAO - part I</a></h4>
+							<p>Just right after the damaging typhoon Milenyo, Cathy, Marby and I were scheduled to take a three-day break in Davao City...</p>
+							<small>
+							<span class="fa fa-user"><a href="https://lekat-sera.travellerspoint.com/1/">&nbsp; Lekat-sera </a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="blog2.html">&nbsp; February 23, 2011</a></span>
+							</small>
+						</div>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/fooda.png">
+						</div>
+						<div>
+							<h4><a href="guide2.html">What to do in Davao? EAT EAT EAT!</a></h4>
+							<p>I visited the lovely Davao City and fell in love. My friends from Davao would usually boast how the people there are more disciplined than most, that the city was clean...</p>
+							<small>
+							<span class="fa fa-user"><a href="https://gingerscorner.travellerspoint.com/">&nbsp; GingerFerrer </a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="guide2.html">&nbsp; February 11, 2016</a></span>
+							</small>
+						</div>
+					</div>
+				</div>
+
+			</div> <!-- RIGHT COLUMN END -->
+
+		</div>	<!-- ROW END -->
+	</div> <!-- CONTAINER END -->
+
+<!-- FOOTER SECTION -->
+
+	<footer>
+		<div class="footer">
+    		<div class="container">
+    			<div class="row">
+					<!-- <div class="col-md-3 text-center">
+						<img id="logo-footer" src="img/logo-sample.png">
+					</div> -->
+					<div class="col-md-6">
+						<h4></h4>
+						<div class="row">
+							<div class="col-md-3">
+								<img id="logo-footer" src="img/logo-sample.png">
+							</div>
+							<div class="col-md-9">
+								<p>Contents herein are freely sourced from partner websites that are made available under <a href="https://creativecommons.org/">Creative Commons Attribution CC0</a>.</p>
+								
+								<p>Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.
+								<span class="fa fa-creative-commons"></span>
+								</p>
+
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-md-3">
+						<h4>GET STARTED</h4>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="tour-packages.html">Tour Packages</a></li>
+							<li><a href="journals.html">Travel Journals</a></li>
+							<li><a href="forum.html">Forum</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<h4>SUBSCRIBE</h4>
+				    		<div class="center text-center">
+				                <p>Subscribe to our weekly Newsletter.</p>
+				                <form action="" method="post" role="form">
+				                    <div class="input-group">
+				                      <span class="input-group-addon">
+				                        <i class="fa fa-envelope"></i>
+				                      </span>
+				                      <input class="form-control" type="text" id="" name="" placeholder="juandelacruz@yesdavao.com">
+				                    </div>
+				                    <input required type="submit" value="Subscribe" class="btn btn-large btn-primary footer-button">
+				              </form>
+				            </div>   
+						</div>
+					</div>
+				</div>
+			</div> <!-- CLASS CONTAINER CLOSE -->
+		</div> <!-- CLASS FOOTER CLOSE -->
+	</footer>
+
+<!-- FOOTER SECTION END -->
+
+
+<!-- MODAL HERE -->
+
+ 	<!-- <button type="button" class="btn btn-info btn-lg" (data-toggle="modal" data-target="#login-overlay")>Open Modal</button> -->
+
+	<div id="login-overlay" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+	      <div class="modal-content">
+	          <div class="modal-header">
+	              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+	              <h4 class="modal-title" id="myModalLabel">Login to YesDavao.com</h4>
+	          </div>
+	          <div class="modal-body">
+	              <div class="row">
+	                  <div class="col-xs-6">
+	                      <div class="well">
+	                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+	                              <div class="form-group">
+	                                  <label for="username" class="control-label">Username</label>
+	                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="juandelacruz@yesdavao.com">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div class="form-group">
+	                                  <label for="password" class="control-label">Password</label>
+	                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+	                              <div class="checkbox">
+	                                  <label>
+	                                      <input type="checkbox" name="remember" id="remember"> Remember login
+	                                  </label>
+	                                  <p class="help-block">(if this is a private computer)</p>
+	                              </div>
+	                              <button type="submit" class="btn btn-success btn-block">Login</button>
+	                              <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+	                          </form>
+	                      </div>
+	                  </div>
+	                  <div class="col-xs-6">
+	                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
+	                      <ul class="list-unstyled" style="line-height: 2">
+	                          <li><span class="fa fa-check text-success"></span> See all your bookings</li>
+	                          <li><span class="fa fa-check text-success"></span> Fast booking transaction</li>
+	                          <li><span class="fa fa-check text-success"></span> Upload your photos</li>
+	                          <li><span class="fa fa-check text-success"></span> Share your journey story</li>
+	                          <li><span class="fa fa-check text-success"></span> Win prizes</li>
+	                      </ul>
+	                      <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+		</div>
+	</div>
+
+<!-- MODAL END -->
+
+<!-- SCROLL TO TOP -->
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+<!-- SCROLL TO TOP END -->
+
+<script src="cap1.js"></script>
+
+</body>
+</html>

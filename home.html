@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cap1.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Josefin+Sans|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Ubuntu:400,500,700" rel="stylesheet">
+    <title>YesDavao!</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- HEADER / JUMBOTRON / CAROUSEL START -->
+	<div class="jumbotron jumbotron-fluid" id="header">
+	  <div class="container text-center">
+	    <h1 class="display-3">Explore Davao</h1>
+	    <p class="lead">Say <span id="font-red">yes</span> to new Adventures</p>
+	    <span><a href="tour-packages.html"><button type="button" class="btn btn-lg btn-primary">Tour Packages</button></a></span>
+	  </div>
+	</div>
+<!-- HEADER / JUMBOTRON / CAROUSEL END -->
+
+<!-- NAVBAR START -->
+<!-- SECONDARY NAV -->
+	<nav class="navbar navbar-default hidden-sm hidden-xs" id="secondary-nav">
+	  <div class="container-fluid">
+	      <form class="navbar-form navbar-right" id="nav-top">
+	  		<span>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">LOGIN</a>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">SIGN UP</a>
+	  		</span>
+	      </form>
+	  </div>
+	</nav>
+
+<!-- PRIMARY NAV -->
+	<nav class="navbar navbar-default" id="primary-nav">
+	  <div class="container-fluid" style="width: 90%;">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="home.html">
+	      	<img class="logo-nav" src="img/logo2.png">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="home.html">Home</a></li>
+	        <li><a href="tour-packages.html">Tour Packages</a></li>
+	        <li class="dropdown">
+	          <a href="journals.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Journals <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="guides.html">Guides</a></li>
+	            <li><a href="journeys.html">Journeys</a></li>
+	            <li><a href="news.html">News</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="forum.html">Forum</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+	      </ul>
+
+			<form class="navbar-form navbar-right hidden-sm hidden-xs">
+		 		<div class="input-group" id="nav-search">
+				    <input type="text" class="form-control" placeholder="Search the website">
+				    <span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+		    	</div>
+		    </form>
+	        
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!-- NAVBAR END -->
+
+<!-- HEADER END -->
+
+<!-- HOTEL/FLIGHT/TOURS BOOKING TABS -->
+	<div class="container">
+		<div class="tabbable-panel">
+			<div class="tabbable-line">
+				<ul class="nav nav-tabs nav-justified">
+					<li class="active">
+						<a href="#tab_default_1" data-toggle="tab"><h3>
+						Flights </h3></a>
+					</li>
+					<li>
+						<a href="#tab_default_2" data-toggle="tab"><h3>
+						Hotels </h3></a>
+					</li>
+					<li>
+						<a href="#tab_default_3" data-toggle="tab"><h3>
+						Tour Packages </h3></a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+<!-- BOOK FLIGHTS -->
+					<div class="container tab-pane in active fade" id="tab_default_1">
+						<form>
+							<div class="row">
+<!-- 1st ROW LEFT SECTION -->
+							  <div class="col-sm-12 col-md-6">
+							  	<div class="form-group col-sm-12 col-md-6">
+								    <label for="book-from">From:</label>
+								    <div class="input-group">
+									    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
+									    <input required type="text" class="form-control" id="book-from" placeholder="e.g. Manila, Cebu">
+								    </div>
+								</div>
+								<div class="form-group col-sm-12 col-md-6">
+								    <label for="book-to">To:</label>
+								    <div class="input-group">
+									    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
+									    <input required type="text" class="form-control" id="book-to" placeholder="e.g. Davao">
+								    </div>
+								</div>
+							  </div>
+<!-- 1st ROW RIGHT SECTION -->
+								<div class="col-sm-12 col-md-6">
+							  		<div class="form-group col-sm-11 col-md-11">
+									  <label for="book-passengers">Number of Passengers:</label>
+									  <div class="input-group">
+										  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-users"></i></span>
+										  <select class="form-control" required id="book-passengers">
+										    <option disabled selected="">How many are travelling?</option>
+										    <option>1</option>
+										    <option>2</option>
+										    <option>3</option>
+										    <option>4</option>
+										    <option>5</option>
+										    <option>6</option>
+										    <option>7</option>
+										    <option>8</option>
+										    <option>9</option>
+										    <option>10</option>
+										  </select>
+									  </div>
+							  		</div>
+							  		<div class="col-sm-1 col-md"></div> <!-- FOR ALIGNMENT -->
+								</div>
+							</div>
+
+							<div class="row">
+<!-- 2nd ROW LEFT SECTION -->
+							  <div class="form-group col-sm-12 col-md-6">
+							  	<div class="col-sm-12 col-md-6">
+								    <label for="book-departure">Departure:</label>
+								    <div class="input-group">
+									    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-plane"></i></span>
+									    <input required type="date" class="form-control" id="book-departure">
+								    </div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+								    <label for="book-arrival">Arrival:</label>
+								    <div class="input-group">
+								    	<span class="input-group-addon" id="basic-addon1"><i class="fa fa-plane"></i></span>
+								    	<input required type="date" class="form-control" id="book-arrival">
+								    </div>
+								</div>
+							  </div>
+<!-- 2nd ROW RIGHT SECTION -->
+							  <div class="col-sm-12 col-md-6">
+							  	<div class="form-group col-sm-12 col-md-6">
+								    <label for="book-seat">Seat Class:</label>
+									  <div class="input-group">
+										  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-briefcase"></i></span>
+										  <select class="form-control" required id="book-seat">
+										    <option disabled selected="">Choose seat class</option>
+										    <option>Economy Class</option>
+										    <option>Premium Economy Class</option>
+										    <option>Business Class</option>
+										    <option>First Class</option>
+										  </select>
+									  </div>
+								</div>
+								<div class="input-group col-sm-12 col-md-6">
+									<label for="book-button sr-only"></label>
+									<div class="input-group"></div>
+									<button class="btn btn-default btn-primary" id="book-button" ><span class="fa fa-search"></span> Search Flights</button>
+								</div>
+							  </div>
+							</div> <!-- ROW END -->
+						</form>
+					</div>
+
+<!-- BOOK HOTEL -->
+					<div class="container tab-pane fade" id="tab_default_2">
+						<form>
+							<div class="row">
+<!-- 1st ROW LEFT SECTION -->
+							  <div class="col-sm-12 col-md-6">
+							  	<div class="form-group col-sm-11 col-md-11">
+								    <label for="book-hotel">Destination or Hotel Name:</label>
+								    <div class="input-group">
+									    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-building"></i></span>
+									    <input required type="text" class="form-control" id="book-hotel" placeholder="eg. Apo View Hotel, Marco Polo">
+								    </div>
+								</div>
+								<div class="col-sm-1 col-md-1"></div> <!-- FOR ALIGNMENT -->
+							  </div>
+<!-- 1st ROW RIGHT SECTION -->
+							  <div class="col-sm-12 col-md-6">
+							  	<div class="form-group col-sm-12 col-md-6">
+								    <label for="book-guest">Guests:</label>
+									  <div class="input-group">
+										  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+										  <select class="form-control" required id="book-guest">
+										    <option disabled selected>How many guests?</option>
+										    <option>1</option>
+										    <option>2</option>
+										    <option>3</option>
+										    <option>4</option>
+										    <option>5</option>
+										    <option>6</option>
+										    <option>7</option>
+										    <option>8</option>
+										    <option>9</option>
+										    <option>10</option>
+										    <option>11</option>
+										    <option>12</option>
+										    <option>13</option>
+										    <option>14</option>
+										    <option>15</option>
+										  </select>
+									  </div>
+								</div>
+								<div class="form-group col-sm-12 col-md-6">
+								    <label for="book-room">Rooms:</label>
+									  <div class="input-group">
+										  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-bed"></i></span>
+										  <select class="form-control" required id="book-room">
+										    <option disabled selected>How many rooms?</option>
+										    <option>1</option>
+										    <option>2</option>
+										    <option>3</option>
+										    <option>4</option>
+										    <option>5</option>
+										    <option>6</option>
+										    <option>7</option>
+										  </select>
+									  </div>
+								</div>
+							  </div>
+							</div>
+
+							<div class="row">
+<!-- 2nd ROW LEFT SECTION -->
+							  <div class="form-group col-sm-12 col-md-6">
+							  	<div class="col-sm-12 col-md-6">
+								    <label for="book-in">Check-In:</label>
+								    <div class="input-group">
+									    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+									    <input required type="date" class="form-control" id="book-in">
+								    </div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+								    <label for="book-out">Check-Out:</label>
+								    <div class="input-group">
+								    	<span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+								    	<input required type="date" class="form-control" id="book-out">
+								    </div>
+								</div>
+							  </div>
+<!-- 2nd ROW RIGHT SECTION -->
+							  <div class="col-sm-12 col-md-6">
+								<div class="input-group col-sm-12 col-md-6">
+									<label for="book-button sr-only"></label>
+									<div class="input-group"></div>
+									<button class="btn btn-default btn-primary" id="book-button"><span class="fa fa-search"></span> Search Hotel</button>
+								</div>
+								<div class="col-sm-12 col-md-6"></div> <!-- FOR ALIGNMENT -->
+							  </div>
+							</div> <!-- ROW END -->
+						</form>
+					</div>
+
+<!-- BOOK TOUR PACKAGES -->
+					<div class="container tab-pane fade" id="tab_default_3">
+						<form>
+							<div class="row">
+<!-- 1st ROW LEFT SECTION -->
+							  <div class="col-sm-12 col-md-6">
+							  	<div class="form-group col-sm-11 col-md-11" id="des">
+								    <label for="book-tour">Tour Package:</label>
+									  <div class="input-group">
+										  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-users"></i></span>
+										  <select class="form-control" required id="book-tour">
+										    <option disabled selected>Choose Tour Package?</option>
+										    <option>3D2N Explore Davao Package A</option>
+										    <option>3D2N Explore Davao Package B</option>
+										    <option>3D2N Explore Davao Package C</option>
+										  </select>
+									  </div>
+								</div>
+								<div class="col-sm-1 col-md-1"></div>
+							  </div>
+<!-- 1st ROW RIGHT SECTION -->
+							  <div class="col-sm-12 col-md-6">
+							  	<div class="form-group col-sm-12 col-md-6">
+								    <label for="book-guest">Guests:</label>
+									  <div class="input-group">
+										  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+										  <select class="form-control" required id="book-guest">
+										    <option disabled selected>How many guests?</option>
+										    <option>1</option>
+										    <option>2</option>
+										    <option>3</option>
+										    <option>4</option>
+										    <option>5</option>
+										    <option>6</option>
+										    <option>7</option>
+										    <option>8</option>
+										    <option>9</option>
+										    <option>10</option>
+										    <option>11</option>
+										    <option>12</option>
+										    <option>13</option>
+										    <option>14</option>
+										    <option>15</option>
+										  </select>
+									  </div>
+								</div>
+								<div class="form-group col-sm-12 col-md-6">
+								    <label for="book-room">Rooms:</label>
+									  <div class="input-group">
+										  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-bed"></i></span>
+										  <select class="form-control" required id="book-room">
+										    <option disabled selected>How many rooms?</option>
+										    <option>1</option>
+										    <option>2</option>
+										    <option>3</option>
+										    <option>4</option>
+										    <option>5</option>
+										    <option>6</option>
+										    <option>7</option>
+										  </select>
+									  </div>
+								</div>
+							  </div>
+							</div>
+
+							<div class="row">
+<!-- 2nd ROW LEFT SECTION -->
+							  <div class="form-group col-sm-12 col-md-6" id="low-left">
+							  	<div class="col-sm-12 col-md-6">
+								    <label for="book-in">Check-In:</label>
+								    <div class="input-group">
+									    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+									    <input required type="date" class="form-control" id="book-in">
+								    </div>
+								</div>
+								<div class="col-sm-12 col-md-6">
+								    <label for="book-out">Check-Out:</label>
+								    <div class="input-group">
+								    	<span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+								    	<input required type="date" class="form-control" id="book-out">
+								    </div>
+								</div>
+							  </div>
+<!-- 2nd ROW RIGHT SECTION -->
+							  <div class="col-sm-12 col-md-6">
+								<div class="input-group offset-sm-6 offset-sm-6 col-sm-12 col-md-6">
+									<label for="book-button sr-only"></label>
+									<div class="input-group"></div>
+									<button class="btn btn-default btn-primary" id="book-button"><span class="fa fa-search"></span> Search Hotel</button>
+								</div>
+							  </div>
+							</div> <!-- ROW END -->
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container section-1">
+		<div class="row text-center">
+			<h1>Your ultimate travel guide to Davao</h1>
+			<hr>
+			<div class="col-sm-4 col-md-4 text-center">
+				<div>
+				      <img class="img-rounded img-responsive" src="img/map2.jpeg" alt="...">
+				</div>
+				<div>
+				    <h2>Plan your journey</h2>
+				    <ul>
+				    	<li>Create a map of your travels</li>
+						<li>Get sorted with our bucket list</li>
+						<li>Find answers in the Travel Forums and Travel Guide</li>
+						<li>Arrange your travellers insurance and SIM cards</li>
+				    </ul>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-md-4 text-center">
+				<div>
+				      <img class="img-rounded img-responsive" src="img/hotel2.jpeg" alt="...">
+				</div>
+				<div>
+				    <h2>Book your stay</h2>
+				    <ul>
+				    	<li>Create a map of your travels</li>
+						<li>Get sorted with our packing list</li>
+						<li>Find answers in the Travel Forums and Travel Guide</li>
+						<li>Arrange your travellers insurance and SIM cards</li>
+				    </ul>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-md-4 text-center">
+				<div>
+				      <img class="img-rounded img-responsive" src="img/share2.jpeg" alt="...">
+				</div>
+				<div>
+				    <h2>Share your story</h2>
+				    <ul>
+				    	<li>Write your own travel blog</li>
+						<li>Review your accommodation</li>
+						<li>Become a travel helper and contribute to the guides</li>
+						<li>Upload unlimited photos and enter competition</li>
+				    </ul>
+				</div>
+			</div>
+		</div> <!-- ROW END -->
+	</div> <!-- CONTAINER END -->
+
+<!-- MAIN SECTION -->
+
+<!-- FEATURED STORIES START -->
+	<div class="container section-1" id="featured-journeys">
+	    <div class="row">
+			<div class="well">
+		        <h1 class="text-center">Featured Stories</h1>
+		        <hr>
+		        <div class="list-group">
+<!-- FEATURED 1 -->
+		          	<a href="guide1.html" class="list-group-item">
+		                <div class="col-md-3 col-sm-4 col-xs-12">
+		                    <figure class="text-center">
+		                        <img class="featured-img img-rounded" src="img/featured1a.jpeg">
+		                    </figure>
+		                </div>
+		                <div class="col-md-6 col-sm-8 col-xs-12">
+		                    <h3 class="list-group-item-heading"> The Bacon Travel Survival Guide </h3>
+		                    <div class="label-tags">
+			                    <span class="label label-primary">Travel</span>
+								<span class="label label-warning">Guide</span>
+							</div>
+		                    <p class="list-group-item-text margintb-20"> I spend a fair bit of time traveling. Like many of you, this involves catching planes, trains, and automobiles, schlepping around between airports and hotels, figuring out conference centers, and more. Some years back I shared a room with my friend Pete Graner and was amused by how much crap he packed into his bag...
+		                    <br><br>
+		                    <small>
+							<span class="fa fa-user"></span> &nbsp;Jono Bacon
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"></span> &nbsp;August 10, 2016
+							</small>
+							</p>
+		                </div>
+		                <div class="col-md-3 text-center">
+		                    <h2> 785 <small> votes </small></h2>
+		                    <button type="button" class="btn btn-default btn-block">Read Now! </button>
+		                    <div class="stars">
+		                        <span class="glyphicon glyphicon-star"></span>
+		                        <span class="glyphicon glyphicon-star"></span>
+		                        <span class="glyphicon glyphicon-star"></span>
+		                        <span class="glyphicon glyphicon-star"></span>
+		                        <span class="glyphicon glyphicon-star-empty"></span>
+		                    </div>
+		                    <p> Average 4.5 <small> / </small> 5 </p>
+		                </div>
+		          	</a>
+<!-- FEATURED 2 -->
+		          	<a href="#" class="list-group-item">
+		                <div class="col-md-3 col-sm-4 col-xs-12">
+						    <figure class="text-center">
+						        <img class="featured-img img-rounded" src="img/articles/article6aa.jpg">
+						    </figure>
+						</div>
+						<div class="col-md-6 col-sm-8 col-xs-12">
+						    <h3 class="list-group-item-heading"> Philippines' most picturesque volcano erupts </h3>
+						    <div class="label-tags">
+						        <span class="label label-primary">Travel</span>
+								<span class="label label-info">News</span>
+							</div>
+						    <p class="list-group-item-text margintb-20"> Albay province, Philippines - Mt Mayon - famous for its majestic, near-perfect cone shape - is among the most active volcanoes in the Philippines, having erupted at least 50 times in the last 500 years. In 1841, a blast buried an entire town and killed at least 1,200 people. The volcano has been spewing fresh lava and ash for almost two weeks....   
+						    <br><br>
+						    <small>
+							<span class="fa fa-user"></span> &nbsp;Ezra Acayan
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"></span> &nbsp;January 25, 2018
+							</small>
+							</p>
+						</div>
+						<div class="col-md-3 text-center">
+						    <h2> 642 <small> votes </small></h2>
+						    <button type="button" class="btn btn-default btn-block">Read Now! </button>
+						    <div class="stars">
+						        <span class="glyphicon glyphicon-star"></span>
+						        <span class="glyphicon glyphicon-star"></span>
+						        <span class="glyphicon glyphicon-star"></span>
+						        <span class="glyphicon glyphicon-star"></span>
+						        <span class="glyphicon glyphicon-star-empty"></span>
+						    </div>
+						    <p> Average 3.9 <small> / </small> 5 </p>
+						</div>
+		         	</a>
+<!-- FEATURED 3 -->
+		          	<a href="blog3.html" class="list-group-item">
+		                <div class="col-md-3 col-sm-4 col-xs-12">
+						    <figure class="text-center">
+						        <img class="featured-img img-rounded" src="img/articles/article4aa.jpg">
+						    </figure>
+						</div>
+						<div class="col-md-6 col-sm-8 col-xs-12">
+						    <h3 class="list-group-item-heading"> White Water Rafting </h3>
+						    <div class="label-tags">
+						        <span class="label label-primary">Travel</span>
+								<span class="label label-success">Blog</span>
+								<span class="label label-warning">Guide</span>
+							</div>
+						    <p class="list-group-item-text margintb-20"> For some annoying reason it has been really hard for us to upload pics and we know that you like blogs with pics, therefor the lack of blogs! Well we managed to upload some pics of our great time in Davao, first we went to a croc farm (Lene wrote about that) and now I'm gonna tell you about the amazing day we had white water rafting...   
+						    <br><br>
+						    <small>
+							<span class="fa fa-user"></span> &nbsp;lenejimmy
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"></span> &nbsp;February 11, 2016
+							</small>
+							</p>
+						</div>
+						<div class="col-md-3 text-center">
+						    <h2> 429 <small> votes </small></h2>
+						    <button type="button" class="btn btn-default btn-block">Read Now! </button>
+						    <div class="stars">
+						        <span class="glyphicon glyphicon-star"></span>
+						        <span class="glyphicon glyphicon-star"></span>
+						        <span class="glyphicon glyphicon-star"></span>
+						        <span class="glyphicon glyphicon-star"></span>
+						        <span class="glyphicon glyphicon-star-empty"></span>
+						    </div>
+						    <p> Average 4.1 <small> / </small> 5 </p>
+						</div>
+		          	</a>
+		        </div> <!-- LIST GROUP CLOSE -->
+	        </div> <!-- WELL CLOSE -->
+	    </div> <!-- ROW CLOSE -->
+	</div> <!-- JOURNEY CONTAINER CLOSE -->
+
+<!-- FOOTER SECTION -->
+
+	<footer>
+		<div class="footer">
+    		<div class="container">
+    			<div class="row">
+					<!-- <div class="col-md-3 text-center">
+						<img id="logo-footer" src="img/logo-sample.png">
+					</div> -->
+					<div class="col-md-6">
+						<h4></h4>
+						<div class="row">
+							<div class="col-md-3">
+								<img id="logo-footer" src="img/logo-sample.png">
+							</div>
+							<div class="col-md-9">
+								<p>Contents herein are freely sourced from partner websites that are made available under <a href="https://creativecommons.org/">Creative Commons Attribution CC0</a>.</p>
+								
+								<p>Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.
+								<span class="fa fa-creative-commons"></span>
+								</p>
+
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-md-3">
+						<h4>GET STARTED</h4>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="tour-packages.html">Tour Packages</a></li>
+							<li><a href="journals.html">Travel Journals</a></li>
+							<li><a href="forum.html">Forum</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<h4>SUBSCRIBE</h4>
+				    		<div class="center text-center">
+				                <p>Subscribe to our weekly Newsletter.</p>
+				                <form action="" method="post" role="form">
+				                    <div class="input-group">
+				                      <span class="input-group-addon">
+				                        <i class="fa fa-envelope"></i>
+				                      </span>
+				                      <input class="form-control" type="text" id="" name="" placeholder="juandelacruz@yesdavao.com">
+				                    </div>
+				                    <input required type="submit" value="Subscribe" class="btn btn-large btn-primary footer-button">
+				              </form>
+				            </div>   
+						</div>
+					</div>
+				</div>
+			</div> <!-- CLASS CONTAINER CLOSE -->
+		</div> <!-- CLASS FOOTER CLOSE -->
+	</footer>
+
+<!-- FOOTER SECTION END -->
+
+
+<!-- MODAL HERE -->
+
+ 	<!-- <button type="button" class="btn btn-info btn-lg" (data-toggle="modal" data-target="#login-overlay")>Open Modal</button> -->
+
+	<div id="login-overlay" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+	      <div class="modal-content">
+	          <div class="modal-header">
+	              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+	              <h4 class="modal-title" id="myModalLabel">Login to YesDavao.com</h4>
+	          </div>
+	          <div class="modal-body">
+	              <div class="row">
+	                  <div class="col-xs-6">
+	                      <div class="well">
+	                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+	                              <div class="form-group">
+	                                  <label for="username" class="control-label">Username</label>
+	                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="juandelacruz@yesdavao.com">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div class="form-group">
+	                                  <label for="password" class="control-label">Password</label>
+	                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+	                              <div class="checkbox">
+	                                  <label>
+	                                      <input type="checkbox" name="remember" id="remember"> Remember login
+	                                  </label>
+	                                  <p class="help-block">(if this is a private computer)</p>
+	                              </div>
+	                              <button type="submit" class="btn btn-success btn-block">Login</button>
+	                              <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+	                          </form>
+	                      </div>
+	                  </div>
+	                  <div class="col-xs-6">
+	                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
+	                      <ul class="list-unstyled" style="line-height: 2">
+	                          <li><span class="fa fa-check text-success"></span> See all your bookings</li>
+	                          <li><span class="fa fa-check text-success"></span> Fast booking transaction</li>
+	                          <li><span class="fa fa-check text-success"></span> Upload your photos</li>
+	                          <li><span class="fa fa-check text-success"></span> Share your journey story</li>
+	                          <li><span class="fa fa-check text-success"></span> Win prizes</li>
+	                      </ul>
+	                      <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+		</div>
+	</div>
+
+<!-- MODAL END -->
+
+<!-- SCROLL TO TOP -->
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+<!-- SCROLL TO TOP END -->
+
+<script src="cap1.js"></script>
+
+</body>
+</html>

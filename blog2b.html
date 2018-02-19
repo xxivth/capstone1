@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cap1.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Josefin+Sans|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Ubuntu:400,500,700" rel="stylesheet">
+    <title>YesDavao!</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- HEADER / JUMBOTRON / CAROUSEL START -->
+	<div class="jumbotron jumbotron-fluid" id="header">
+	  <div class="container text-center">
+	    <h1 class="display-3">Explore Davao</h1>
+	    <p class="lead">Say <span id="font-red">yes</span> to new Adventures</p>
+	    <span><a href="tour-packages.html"><button type="button" class="btn btn-lg btn-primary">Tour Packages</button></a></span>
+	  </div>
+	</div>
+<!-- HEADER / JUMBOTRON / CAROUSEL END -->
+
+<!-- NAVBAR START -->
+<!-- SECONDARY NAV -->
+	<nav class="navbar navbar-default hidden-sm hidden-xs" id="secondary-nav">
+	  <div class="container-fluid">
+	      <form class="navbar-form navbar-right" id="nav-top">
+	  		<span>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">LOGIN</a>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">SIGN UP</a>
+	  		</span>
+	      </form>
+	  </div>
+	</nav>
+
+<!-- PRIMARY NAV -->
+	<nav class="navbar navbar-default" id="primary-nav">
+	  <div class="container-fluid" style="width: 90%;">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="home.html">
+	      	<img class="logo-nav" src="img/logo2.png">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="home.html">Home</a></li>
+	        <li><a href="tour-packages.html">Tour Packages</a></li>
+	        <li class="dropdown active">
+	          <a href="journals.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Journals <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="guides.html">Guides</a></li>
+	            <li><a href="journeys.html">Journeys</a></li>
+	            <li><a href="news.html">News</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="forum.html">Forum</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+	      </ul>
+
+			<form class="navbar-form navbar-right hidden-sm hidden-xs">
+		 		<div class="input-group" id="nav-search">
+				    <input type="text" class="form-control" placeholder="Search the website">
+				    <span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+		    	</div>
+		    </form>
+	        
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!-- NAVBAR END -->
+
+<!-- HEADER END -->
+
+	<div class="container" id="article">
+		<!-- <h1 class="title-page text-center">Guides</h1> -->
+		<hr>
+		<div class="row">
+<!-- BREADCRUMBS -->
+			<ol class="breadcrumb">
+			  <li><a href="home.html">YesDavao</a></li>
+			  <li><a href="journeys.html">Articles</a></li>
+			  <li class="active">PURE JOY IN DAVAO - part II</li>
+			</ol>
+
+			<div class="article-title">
+				<h1>PURE JOY IN DAVAO - Part II</h1>
+				<ul class="list-inline">
+					<li><img class="author-img img-thumbnail img-circle" src="img/articles/tpoint.jpg">
+					</li>
+					<li>
+						<div id="author" class="author-name">
+							<p>
+							<span class="label label-success label-lg">
+							Blog
+							</span>
+							<span class="label label-danger">
+							Travel
+							</span>
+							<br>
+							by <a href="https://lekat-sera.travellerspoint.com">Lekat-sera</a>
+							<br>
+							February 23, 2011 <span class="fa fa-creative-commons"></span><a href="https://lekat-sera.travellerspoint.com/1/">lekat-sera.travellerspoint.com</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<hr>
+			</div>
+
+			<div class="container col-lg-9 col-md-9 main-col">
+<!-- ARTICLE TITLE/HEADING -->
+				<div class="article-head">
+					<figure>
+						<img class="article-img img-responsive img-thumbnail" src="img/articles/article3b.jpeg">
+						<figcaption class="caption">
+						<p>A three-day trip to Mindanao with friends
+						<a href="http://www.unsplash.com"><span class="fa fa-creative-commons"></span>unsplash.com</a></p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="article-main">
+
+					<h4>Continuation from <a href="blog2.html">Part 1</a></h4>
+
+					<h3>The ‘Yahong’ Experience</h3>
+
+					<p class="lead vertical-line">At around 7:00 pm, Cathy and I decided to take our dinner. We both didn’t want to miss out on our food trip in Davao and experience another gastronomical adventure! Before our trip, we already had some ideas as to where to go and dine as suggested by Jerson, my sister’s Davao-based officemate. Based on the email he sent me, he suggested going to Torres Street - a long stretch of restaurants and spas. Luckily, that street is just a 5-minute walk from our hotel, which we discovered while we were riding a cab going to Eden Park earlier.</p>
+
+					<p>We walked through J.P. Rizal Street and then took a right turn to Torres Street. First on the left side is the Durian Paradise. It’s a night market selling different varieties of Durian, where you can readily eat a freshly opened one. They were selling Durian at forty pesos per kilo. One booth sells Durian ice cream. Since both of us didn’t have the courage to taste a fresh Durian, we decided to take Durian ice cream instead, but we didn’t do it until tomorrow.</p>
+
+					<p>Beside the Durian Paradise is an underdeveloped vacant lot which becomes a parking lot for a lot of cars dining in the strip of Yahong, Kubyertos and Zakoya. Some of the restaurants seemed ‘sosyal’ at first, but then we decided on dining in Yahong. According to Jerson’s email, the restaurant is a fusion of Dabawenyo and Ilonggo Cuisine; it was tempting to try something new, diba?</p>
+
+					<p>Inside Yahong is a homey ambience that looks like a typical Filipino restaurant, only it has dim lights, and a not so theme-coordinated setting. We were on a cushioned seat close to the wall. While browsing in their menu, Cathy and I decided to have chicken barbeque and shrimp in butter sauce, and then we also ordered watermelon and mango shake. While waiting for our order, the restaurant provides reading materials like Vogue, Preview and other fashion magazines.</p>
+
+					<p>Dinner was served in just twenty minutes. We had a big serving of chicken barbeque and a small saucer of shrimps. They were tiny, only a lot bigger than a hibi. Haha! We were a bit disappointed with the amount of serving, but when we tasted it…”FIVE RAPSA POINTS!” The shrimps tasted like my scampi, only it is tastier and has a special twist of lemon butter that keeps you wanting for more. The chicken barbeque was just well done, with a sweet tasty flavor that doesn’t need any more sawsawan. It was the yummiest dinner we ever had. Even the fruit shakes were also refreshing. A truly satisfying dinner for us, plus it’s within our budget – we only paid Php355 for the whole meal!</p>
+
+					<h3>Monday Shopping Surprise</h3>
+
+					<p>Just as we planned yesterday, we had dedicated our last day to pasalubong shopping and do some errands. Cathy and I bought some postcards in National Bookstore when we were in SM Davao last Saturday night. We were planning to send them to some of our loved ones back home as a surprise. After having our breakfast at the hotel at around 7:00 am, we went to the Post Office and mailed our postcards.</p>
+
+					<p>A few blocks away from the Post Office is the Aldevinco Shopping Center which is definitely a complete haven for local products showcasing the richness of Mindanao culture. The stalls were fairly similar to those in Tutuban Center; only each stall is smaller and offers a different array of products that cannot be found in any of the neighboring stalls. Cathy and I both splurged on buying souvenir T-shirts, shawls, bags, bead accessories, and some Mindanao inspired fabric to bring home as pasalubong, as well as gifts for ourselves.</p>
+
+					<p>Our Davao trip will never be complete without bringing home a piece of the town’s exotic fruit which is the Durian. So we asked around where to buy the most reasonably priced durian, and most of the people we’ve asked answered, “Dun sa Uyanguren, maraming Durian dun…” Since time was still on our side, we rode a public transport going to Magsaysay (Uyanguren). It was a five-minute ride to reach a talipapa in a busy intersection road. There were different varieties of Durian just lying on the streets as they were unloaded from a delivery truck. A few people would stop by to buy a kilo and some would stay to eat the fruit right away. My brother-in-law, K, asked me to buy durian for pasalubong, but I never knew that there were three varieties – the Puyat, Arancillo and the Native – so I just decided to buy one for each variety.</p>
+
+					<p>Cathy wanted to buy suha (pomelo) for her Mom, so we asked around for stalls selling other fruits as well as other sweet delicacies. We reached Ponciano Street, near the Post Office. We only bought a few pomelos since we had to commute them back to the hotel. It was already lunch time when we finished our shopping spree. We had our lunch at one of the nearby mall beside Ateneo University. We had a Php 50 worth of lunch complete with drinks! It was the best meal we had on a limited budget.</p>
+
+					<h3>Leaving Paradise</h3>
+
+					<p>It was almost three o’clock in the afternoon when Cathy and I packed up and left the hotel. We hired a taxi going to the airport, where we arrived a bit early for the 5pm flight which was delayed a couple of hours later. We already checked in our baggage by 4:30pm, and then we both found ways to amuse ourselves with the digital camera. We had our interviews and all that talk show gimmicks for the closing of our so-called ‘travel documentary’.</p>
+
+					<p>It was such a joy having a lot of moments to share with about Davao. This place truly deserves to be called a paradise for everything – from food, shopping to nature parks and beaches – truly a budget traveler’s dream!  </p>
+
+					<p>By 7:00 pm we were already boarding the plane. It wasn’t raining when we left Davao, but as we approached Manila, the flight began turbulent. It was another first for me to experience so much anxiety whether we were going to be home safe or not. Cathy was seated beside the window, then I was seated at the center, and on my right is a young mom with a two-year old son. During the flight, the toddler was very uneasy and he seldom stays put. The flight attendant had to call her mom’s attention twice just to keep the toddler on his seat. This is where Cathy and I had to demonstrate our “Hands On Manila” prowess to entertain kids. I took the child on my lap while Cathy tries to entertain the kid with her bonnet and my hair pantali. Luckily, it worked.</p>
+
+					<p>It was the longest hour in my life while we wait for the airplane to land the NAIA runway. Because of the heavy rains, the pilot cannot clearly see the runway. It was finally a relief to hear the airplane’s wheels on touchdown - a blessing that we landed safely. While we were still up there, I was thinking if I was ready to die if anything bad happens. But somehow, part of me knew that I am.</p>
+
+					<p>Dad was already waiting for us at the terminal. While waiting for our baggage, the rains did not stop yet. It was raining heavily so we waited for almost thirty minutes for it to stop.</p>
+
+					<p>What an out-of-town experience we had! For me it’s one of the most memorable. There’s too much we can get out of life, we just have to choose to live the life we really want, of course, with God’s will.</p>
+
+				</div> <!-- ARTICLE MAIN END -->
+<!-- SOCIAL ICONS AND CREDITS -->
+				<ul class="list-inline social-icons">
+					<li><p>Share: </p></li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-facebook"></a> 256</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-twitter"></a> 24</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-google"></a> 16</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-instagram"></a> 25</li>
+				</ul>
+				<div class="article-credits">
+					<p><a href="https://lekat-sera.travellerspoint.com/1/">
+					<span class="fa fa-creative-commons"></span> source: lekat-sera.travellerspoint.com
+					</a></p>
+				</div>
+				<hr>
+<!-- PAGINATION -->
+				<nav aria-label="true">
+				  <ul class="pager">
+				    <li class="previous"><a href="#">Previous</a></li>
+				    <li class="next"><a href="#">Next</a></li>
+				  </ul>
+				</nav>
+		
+			</div> <!-- MAIN COLUMN END -->
+
+<!-- RIGHT COLUMN START -->
+			<div class="col-lg-3 col-md-3 right-col" id="sidebar">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Join Our Newsletter</h4>
+					</div>
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<input type="email" class="form-control" placeholder="Email address"></input>
+						<button type="submit" class="btn btn-default btn-primary btn-sm margin-t10">Subscribe</button>
+					</div>
+				</div>
+
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Recent Entries</h4>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/article6aa.jpg">
+						</div>
+						<div>
+							<h4><a href="news1.html">Philippines' most picturesque volcano erupts</a></h4>
+							<p>Albay province, Philippines - Mt Mayon - famous for its majestic, near-perfect cone shape...</p>
+							<small>
+							<span class="fa fa-user"><a href="http://www.aljazeera.com/profile/ezra-acayan.html">&nbsp; Ezra Acayan</a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="news1.html">&nbsp; January 25, 2018</a></span>
+							</small>
+						</div>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/article3aa.jpeg">
+						</div>
+						<div>
+							<h4><a href="blog2.html">PURE JOY IN DAVAO - part I</a></h4>
+							<p>Just right after the damaging typhoon Milenyo, Cathy, Marby and I were scheduled to take a three-day break in Davao City...</p>
+							<small>
+							<span class="fa fa-user"><a href="https://lekat-sera.travellerspoint.com/1/">&nbsp; Lekat-sera </a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="blog2.html">&nbsp; February 23, 2011</a></span>
+							</small>
+						</div>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/fooda.png">
+						</div>
+						<div>
+							<h4><a href="guide2.html">What to do in Davao? EAT EAT EAT!</a></h4>
+							<p>I visited the lovely Davao City and fell in love. My friends from Davao would usually boast how the people there are more disciplined than most, that the city was clean...</p>
+							<small>
+							<span class="fa fa-user"><a href="https://gingerscorner.travellerspoint.com/">&nbsp; GingerFerrer </a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="guide2.html">&nbsp; February 11, 2016</a></span>
+							</small>
+						</div>
+					</div>
+				</div>
+
+			</div> <!-- RIGHT COLUMN END -->
+
+		</div>	<!-- ROW END -->
+	</div> <!-- CONTAINER END -->
+
+<!-- FOOTER SECTION -->
+
+	<footer>
+		<div class="footer">
+    		<div class="container">
+    			<div class="row">
+					<!-- <div class="col-md-3 text-center">
+						<img id="logo-footer" src="img/logo-sample.png">
+					</div> -->
+					<div class="col-md-6">
+						<h4></h4>
+						<div class="row">
+							<div class="col-md-3">
+								<img id="logo-footer" src="img/logo-sample.png">
+							</div>
+							<div class="col-md-9">
+								<p>Contents herein are freely sourced from partner websites that are made available under <a href="https://creativecommons.org/">Creative Commons Attribution CC0</a>.</p>
+								
+								<p>Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.
+								<span class="fa fa-creative-commons"></span>
+								</p>
+
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-md-3">
+						<h4>GET STARTED</h4>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="tour-packages.html">Tour Packages</a></li>
+							<li><a href="journals.html">Travel Journals</a></li>
+							<li><a href="forum.html">Forum</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<h4>SUBSCRIBE</h4>
+				    		<div class="center text-center">
+				                <p>Subscribe to our weekly Newsletter.</p>
+				                <form action="" method="post" role="form">
+				                    <div class="input-group">
+				                      <span class="input-group-addon">
+				                        <i class="fa fa-envelope"></i>
+				                      </span>
+				                      <input class="form-control" type="text" id="" name="" placeholder="juandelacruz@yesdavao.com">
+				                    </div>
+				                    <input required type="submit" value="Subscribe" class="btn btn-large btn-primary footer-button">
+				              </form>
+				            </div>   
+						</div>
+					</div>
+				</div>
+			</div> <!-- CLASS CONTAINER CLOSE -->
+		</div> <!-- CLASS FOOTER CLOSE -->
+	</footer>
+
+<!-- FOOTER SECTION END -->
+
+
+<!-- MODAL HERE -->
+
+ 	<!-- <button type="button" class="btn btn-info btn-lg" (data-toggle="modal" data-target="#login-overlay")>Open Modal</button> -->
+
+	<div id="login-overlay" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+	      <div class="modal-content">
+	          <div class="modal-header">
+	              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+	              <h4 class="modal-title" id="myModalLabel">Login to YesDavao.com</h4>
+	          </div>
+	          <div class="modal-body">
+	              <div class="row">
+	                  <div class="col-xs-6">
+	                      <div class="well">
+	                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+	                              <div class="form-group">
+	                                  <label for="username" class="control-label">Username</label>
+	                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="juandelacruz@yesdavao.com">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div class="form-group">
+	                                  <label for="password" class="control-label">Password</label>
+	                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+	                              <div class="checkbox">
+	                                  <label>
+	                                      <input type="checkbox" name="remember" id="remember"> Remember login
+	                                  </label>
+	                                  <p class="help-block">(if this is a private computer)</p>
+	                              </div>
+	                              <button type="submit" class="btn btn-success btn-block">Login</button>
+	                              <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+	                          </form>
+	                      </div>
+	                  </div>
+	                  <div class="col-xs-6">
+	                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
+	                      <ul class="list-unstyled" style="line-height: 2">
+	                          <li><span class="fa fa-check text-success"></span> See all your bookings</li>
+	                          <li><span class="fa fa-check text-success"></span> Fast booking transaction</li>
+	                          <li><span class="fa fa-check text-success"></span> Upload your photos</li>
+	                          <li><span class="fa fa-check text-success"></span> Share your journey story</li>
+	                          <li><span class="fa fa-check text-success"></span> Win prizes</li>
+	                      </ul>
+	                      <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+		</div>
+	</div>
+
+<!-- MODAL END -->
+
+<!-- SCROLL TO TOP -->
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+<!-- SCROLL TO TOP END -->
+
+<script src="cap1.js"></script>
+
+</body>
+</html>

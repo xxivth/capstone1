@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cap1.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Josefin+Sans|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Ubuntu:400,500,700" rel="stylesheet">
+    <title>YesDavao!</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- HEADER / JUMBOTRON / CAROUSEL START -->
+	<div class="jumbotron jumbotron-fluid" id="header">
+	  <div class="container text-center">
+	    <h1 class="display-3">Explore Davao</h1>
+	    <p class="lead">Say <span id="font-red">yes</span> to new Adventures</p>
+	    <span><a href="tour-packages.html"><button type="button" class="btn btn-lg btn-primary">Tour Packages</button></a></span>
+	  </div>
+	</div>
+<!-- HEADER / JUMBOTRON / CAROUSEL END -->
+
+<!-- NAVBAR START -->
+<!-- SECONDARY NAV -->
+	<nav class="navbar navbar-default hidden-sm hidden-xs" id="secondary-nav">
+	  <div class="container-fluid">
+	      <form class="navbar-form navbar-right" id="nav-top">
+	  		<span>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">LOGIN</a>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">SIGN UP</a>
+	  		</span>
+	      </form>
+	  </div>
+	</nav>
+
+<!-- PRIMARY NAV -->
+	<nav class="navbar navbar-default" id="primary-nav">
+	  <div class="container-fluid" style="width: 90%;">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="home.html">
+	      	<img class="logo-nav" src="img/logo2.png">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="home.html">Home</a></li>
+	        <li><a href="tour-packages.html">Tour Packages</a></li>
+	        <li class="dropdown active">
+	          <a href="journals.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Journals <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="guides.html">Guides</a></li>
+	            <li><a href="journeys.html">Journeys</a></li>
+	            <li><a href="news.html">News</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="forum.html">Forum</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+	      </ul>
+
+			<form class="navbar-form navbar-right hidden-sm hidden-xs">
+		 		<div class="input-group" id="nav-search">
+				    <input type="text" class="form-control" placeholder="Search the website">
+				    <span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+		    	</div>
+		    </form>
+	        
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!-- NAVBAR END -->
+
+<!-- HEADER END -->
+
+	<div class="container" id="article">
+		<!-- <h1 class="title-page text-center">Guides</h1> -->
+		<hr>
+		<div class="row">
+<!-- BREADCRUMBS -->
+			<ol class="breadcrumb">
+			  <li><a href="home.html">YesDavao</a></li>
+			  <li><a href="journeys.html">Articles</a></li>
+			  <li class="active">PURE JOY IN DAVAO - part I</li>
+			</ol>
+
+			<div class="article-title">
+				<h1>PURE JOY IN DAVAO - part I</h1>
+				<ul class="list-inline">
+					<li><img class="author-img img-thumbnail img-circle" src="img/articles/tpoint.jpg">
+					</li>
+					<li>
+						<div id="author" class="author-name">
+							<p>
+							<span class="label label-success label-lg">
+							Blog
+							</span>
+							<span class="label label-danger">
+							Travel
+							</span>
+							<br>
+							<a href="https://lekat-sera.travellerspoint.com">Lekat-sera</a>
+							<br>
+							February 23, 2011 <span class="fa fa-creative-commons"></span><a href="https://lekat-sera.travellerspoint.com/1/">lekat-sera.travellerspoint.com</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<hr>
+			</div>
+
+			<div class="container col-lg-9 col-md-9 main-col">
+<!-- ARTICLE TITLE/HEADING -->
+				<div class="article-head">
+					<figure>
+						<img class="article-img img-responsive img-thumbnail" src="img/articles/article3a.jpeg">
+						<figcaption class="caption">
+						<p>A three-day trip to Mindanao with friends
+						<a href="http://www.unsplash.com"><span class="fa fa-creative-commons"></span>unsplash.com</a></p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="article-main">
+
+					<p class="lead vertical-line">Just right after the damaging typhoon Milenyo, Cathy, Marby and I were scheduled to take a three-day break in Davao City. Six months in waiting - with every inch of excitement withheld - all just to take advantage of Cebu Pacific's 10-peso fare promo!</p>
+
+					<p>Fearing that our Friday night flight to Mindanao will be cancelled due to power outages, uprooted trees and fallen billboards, it was still God's grace that the weather calmed down. Although the flight was delayed for almost a couple of hours, we finally landed at our destination at around 10pm. It’s my very first time to reach Mindanao and travel independently. Marby picked us up at the airport, and we hired a taxi going to Sychar Garden Hotel. With our growling stomachs, Cathy and I took our late dinner at McDonald's Bajada - only about ten steps away from the hotel where we checked in.</p>
+
+					<h3>The Issues</h3>
+
+					<p>Sa totoo lang, wala naman talagang trip to Davao if it wasn't for Marby. Many thanks to her for lining up at the Cebu Pacific's office to get our tickets...&lt; Applause, Applause! &gt;.</p>
+
+					<p>Maybe because of much excitement, she opted to invite her other friends. Nothing seemed wrong at first, until we started planning our itinerary. It was only less than a month when we started preparing for the hotel accommodations, including the list of places to visit plus the incurring expenses. We had our meetings to finalize everything, but every time the week is over, a new idea comes out again, thus, requiring the whole itinerary to be reset. We had conflicts over the activities to be done in Davao, they wanted to go white water rafting while Cathy and I wanted to have a quiet and relaxing time at the beach. From the very start we already had our differences. Much to my dismay, I realized that all our plans were strongly affected by one of Marby's friend's decision. A pasaway in other words. It left Cathy and me to give way to what they wanted to do.</p>
+
+					<p>From the original plan, we were scheduled to take an island-hopping package from Travel Advantage Davao – a travel agency referred by one of my sister’s Davao-based officemate. But they insisted to get a lower package rate with Wind and Wave Davao. Our plan B was supposed to be a Saturday beach fun day in Pearl Farm. A cost of Php1,500 includes a buffet lunch and land transfers from the Waterfront. I was picturing myself sipping a Watermelon shake while lounging at the sands of Pearl Farm, with the best view at the beach. Wow, as in pure relaxation...  One thing I didn’t like about what happened is that Marby had to cancel a day before the flight with the travel agency that I already talked to and when we got there in Davao, she suddenly lays out their plan to have white water rafting on the second day. Tapos, the reason why she had to cancel the other package tour is that we are considering the ‘budget’ daw, when for all we knew kaya pala nya gustong i-scrimp yun is that they already booked themselves to the rafting. Hay!  Although I admit the snorkeling package from Wind and Wave Davao is reasonable naman, I still didn't like the company of Marby's other friend. Pa-sosyal kasi, di naman bagay! &lt;Hahaha!&gt;</p>
+
+					<h3>A Saturday Snorkeling Adventure</h3>
+
+					<p>From Sychar Hotel, we rode a public transport going to the port bound to Samal Island. It was almost 9:00 am when we reached Paradise Island Resort. They arranged an island-hopping tour with Wind and Wave Davao, with Glenn as our tour guide. We rode a speedboat going to the Coral Garden to spend a three-hour island hopping. It’s another first time for me to ride a speedboat!</p>
+
+					<p>The day was perfect for snorkeling. I have tried snorkeling in Puerto Galera and Boracay, but nothing compares to my snorkeling experience in Davao. It was my first time to use fins! The water was calm and clearer, plus it was an astounding sight to see big colorful corals and schools of fishes. Our tour guide took a pink starfish and let us touched it – its texture was a little soft underneath, with a slimy substance coming out of its small opening at the its tip. We went further to different snorkeling sites where we found abundance of clown fish and other familiar characters in the animation, “Finding Nemo”. A closer look at the “drop off” makes a scary feeling of not knowing what’s beyond the blurry scene. The water becomes cooler as we get closer to the island.</p>
+
+					<p>After the long and tiring water activity, we went back to Paradise Island to take our lunch. We had pork sinigang, seafood salad and veggies with oyster sauce. The exciting part of this gastronomical adventure is the yummy strawberry fruit shake, which is truly refreshing and satisfying. After lunch, we explored the Bird Paradise, an aviary located inside the premises of the resort, showcasing different birds like the Philippine eagle, parrots, cockatoos and ostrich.</p>
+
+					<h3>Dinner at Jack’s Ridge</h3>
+
+					<p>After a short break at the hotel, the group decided to go to SM Davao and then have dinner at Jack’s Ridge. Going to SM Davao by public transport took several minutes from our hotel. The night scene in Davao is fairly much the same in Metro Manila. Some of the busy streets that we passed by make you feel you’re in Divisoria, the only difference is the smell of durian all around town.</p>
+
+					<p>Going to Jack’s Ridge is similar to Antipolo, with the entire ambience, the overlooking scene and the restos. We had fish fillet in sweet and sour sauce, nilagang baka and grilled pork ribs. There was also a part in this place that looked like their version of Camp John Hay in Baguio - the Amphitheater, which plays venue to different events like weddings. We didn’t have much time to go around the place because we had to go back to the hotel to prepare for tomorrow morning’s activities.</p>
+
+					<h3>A Nature Tripping Sunday</h3>
+
+					<p>Cathy and I decided to attend the early morning mass at 6:30am. But by the time we got to the Redemptorist Church, the mass was almost done, and it was in the Chabacano dialect, so it was really impossible for us to understand the mass. So, we waited until 7:30 am for the English mass. We were seated on the first row, and it was a very solemn experience to hear mass first thing in the morning. We were surprised to see the church already full at an early hour, we wondered, “Nasa Mindanao tayo... most of the people here are Muslims, diba?” We just assumed it to be so, but I guess there’s still a number of Catholics living in Davao City.</p>
+
+					<p>After the mass, we arranged a cab going to Eden Nature Park. It took us an hour to reach our destination. We paid the entrance fee with buffet lunch of Php380, plus additional 30 pesos for a 45-minute tour around the park.</p>
+
+					<p>The tour started in a few minutes. Cathy and I were simply amazed at the beautiful landscapes and gardens inside the Eden Park (Trivia: the Ayalas owns this place pala!) The name Eden was taken from a native girl of Davao, so it’s pronounced as Eh-den not E-den like the Garden of Eden. Although the tour lasted only for less than an hour, it never stopped us to do our favorite activity to take pictures!</p>
+
+					<p>Lunch was already served at 11:30am, so we headed to the buffet table for a sumptuous meal. We had fresh salad greens in Thousand Island dressing, spaghetti topped with Parmesan cheese and a lot more. After two hours of our “Bondat sa Gubat” feast, we decided to go around and try the Indiana Jones Ride for ourselves, which is another interesting attraction of Eden park. It’s a rope attached to a pulley that slides sideways. It was scary at first, but when you get the hang of it, it’s really fun. It makes you feel young again. The funniest part of Cathy’s ride was when I had to push her back the platform where she left off. She can’t climb down the rope because she can’t reach the ground. &lt;Haha&gt;</p>
+
+					<p>At around 2:00pm, we were ready to take off to our next destination, the Malagos Garden. But since we no longer arranged a cab going back to town, we had to ride another type of vehicle, which the local folks call the “habal-habal” – a motorcycle where the passengers are just seated behind the rider. In Tagalog, we call it “angkas”. Nakakatakot din pala yun, as compared to when you’re riding at the back of a tricycle which is more stable, sa habal-habal, mas mahirap magbalanse ng weight ng two people, tapos tatlo pa kami, diba? It was a very thrilling experience. Little drops of rain were starting to pour in as we rode down the slopes of Mt. Apo. The wind starts rushing in our faces, holding tightly to the Manong driver’s shoulders and hoping that my hat and bag won’t fall off. It was our lucky day that it didn’t rain hard, ambon lang.</p>
+
+					<p>When we reached Toril intersection, we hired another cab that charged us about P200 going to Malagos Garden. It took us almost an hour to reach Malagos. Cathy and I were a little bit disappointed when we toured around the garden. For the P100 entrance fee, there were no added attractions to the tour; we had to tour around by ourselves. The place looked like the Parks and Wildlife in Quezon City, so you can guess it’s like a public park with less maintenance on the facilities. However, we still managed to take some pictures around the park and we tried riding the seesaw and the swing in the playground. The receptionist explained to us that most of the park’s activities like the Butterfly Show are held in the morning. We were there at around 4:00pm, so I guess that explains why there were less people in the park.</p>
+
+					<p>Just across the street we decided to take a peek inside the Puentespina Orchids. My Mamè loves orchids, and I was planning to bring home a Waling-waling for her, but there were still in their early stage so I decided not to buy one. Besides, it’s a little bit bulky to carry along, so I just took pictures of them.</p>
+
+					<p>It was almost 5:00pm and it was getting dark, so we decided not to go to the Philippine Eagle anymore. Again, there was no other available public transport going back to the town proper other than the habal-habal. So, it was take two of our thrilling experience. Since Marby took white water rafting, Cathy and I called this experience as “land rafting”.</p>
+
+					<p>Somewhere in Calinan, we took an air conditioned L300 van going to the city proper. We were supposed to meet Marby at Aldevinco’s to do our partial shopping but then we learned that the shopping center is closed on Sundays. Since it was still early to go back to the hotel, Cathy suggested to walk around the vicinity to check on tomorrow’s shopping itinerary. Our ever-reliable city map led us to discover the Post Office, which is just a block away from Aldevinco Shopping Center and the Marco Polo Hotel. It was easy for us to familiarize the streets and the public transport, all with the help of the guide map, and syempre, buti na lang malakas rin loob ni Cathy.</p>
+
+					<a href="blog2b.html"><button class="btn btn-primary article-btn">Continuation to Part II</button></a>
+					
+
+				</div> <!-- ARTICLE MAIN END -->
+<!-- SOCIAL ICONS AND CREDITS -->
+				<ul class="list-inline social-icons">
+					<li><p>Share: </p></li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-facebook"></a> 256</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-twitter"></a> 24</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-google"></a> 16</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-instagram"></a> 25</li>
+				</ul>
+				<div class="article-credits">
+					<p><a href="https://lekat-sera.travellerspoint.com/1/">
+					<span class="fa fa-creative-commons"></span> source: lekat-sera.travellerspoint.com
+					</a></p>
+				</div>
+				<hr>
+<!-- PAGINATION -->
+				<nav aria-label="true">
+				  <ul class="pager">
+				    <li class="previous"><a href="#">Previous</a></li>
+				    <li class="next"><a href="#">Next</a></li>
+				  </ul>
+				</nav>
+		
+			</div> <!-- MAIN COLUMN END -->
+
+<!-- RIGHT COLUMN START -->
+			<div class="col-lg-3 col-md-3 right-col" id="sidebar">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Join Our Newsletter</h4>
+					</div>
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<input type="email" class="form-control" placeholder="Email address"></input>
+						<button type="submit" class="btn btn-default btn-primary btn-sm margin-t10">Subscribe</button>
+					</div>
+				</div>
+
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Recent Entries</h4>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/article6aa.jpg">
+						</div>
+						<div>
+							<h4><a href="news1.html">Philippines' most picturesque volcano erupts</a></h4>
+							<p>Albay province, Philippines - Mt Mayon - famous for its majestic, near-perfect cone shape...</p>
+							<small>
+							<span class="fa fa-user"><a href="http://www.aljazeera.com/profile/ezra-acayan.html">&nbsp; Ezra Acayan</a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="news1.html">&nbsp; January 25, 2018</a></span>
+							</small>
+						</div>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/article3aa.jpeg">
+						</div>
+						<div>
+							<h4><a href="blog2.html">PURE JOY IN DAVAO - part I</a></h4>
+							<p>Just right after the damaging typhoon Milenyo, Cathy, Marby and I were scheduled to take a three-day break in Davao City...</p>
+							<small>
+							<span class="fa fa-user"><a href="https://lekat-sera.travellerspoint.com/1/">&nbsp; Lekat-sera </a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="blog2.html">&nbsp; February 23, 2011</a></span>
+							</small>
+						</div>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/fooda.png">
+						</div>
+						<div>
+							<h4><a href="guide2.html">What to do in Davao? EAT EAT EAT!</a></h4>
+							<p>I visited the lovely Davao City and fell in love. My friends from Davao would usually boast how the people there are more disciplined than most, that the city was clean...</p>
+							<small>
+							<span class="fa fa-user"><a href="https://gingerscorner.travellerspoint.com/">&nbsp; GingerFerrer </a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="guide2.html">&nbsp; February 11, 2016</a></span>
+							</small>
+						</div>
+					</div>
+				</div>
+
+			</div> <!-- RIGHT COLUMN END -->
+
+		</div>	<!-- ROW END -->
+	</div> <!-- CONTAINER END -->
+
+<!-- FOOTER SECTION -->
+
+	<footer>
+		<div class="footer">
+    		<div class="container">
+    			<div class="row">
+					<!-- <div class="col-md-3 text-center">
+						<img id="logo-footer" src="img/logo-sample.png">
+					</div> -->
+					<div class="col-md-6">
+						<h4></h4>
+						<div class="row">
+							<div class="col-md-3">
+								<img id="logo-footer" src="img/logo-sample.png">
+							</div>
+							<div class="col-md-9">
+								<p>Contents herein are freely sourced from partner websites that are made available under <a href="https://creativecommons.org/">Creative Commons Attribution CC0</a>.</p>
+								
+								<p>Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.
+								<span class="fa fa-creative-commons"></span>
+								</p>
+
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-md-3">
+						<h4>GET STARTED</h4>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="tour-packages.html">Tour Packages</a></li>
+							<li><a href="journals.html">Travel Journals</a></li>
+							<li><a href="forum.html">Forum</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<h4>SUBSCRIBE</h4>
+				    		<div class="center text-center">
+				                <p>Subscribe to our weekly Newsletter.</p>
+				                <form action="" method="post" role="form">
+				                    <div class="input-group">
+				                      <span class="input-group-addon">
+				                        <i class="fa fa-envelope"></i>
+				                      </span>
+				                      <input class="form-control" type="text" id="" name="" placeholder="juandelacruz@yesdavao.com">
+				                    </div>
+				                    <input required type="submit" value="Subscribe" class="btn btn-large btn-primary footer-button">
+				              </form>
+				            </div>   
+						</div>
+					</div>
+				</div>
+			</div> <!-- CLASS CONTAINER CLOSE -->
+		</div> <!-- CLASS FOOTER CLOSE -->
+	</footer>
+
+<!-- FOOTER SECTION END -->
+
+
+<!-- MODAL HERE -->
+
+ 	<!-- <button type="button" class="btn btn-info btn-lg" (data-toggle="modal" data-target="#login-overlay")>Open Modal</button> -->
+
+	<div id="login-overlay" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+	      <div class="modal-content">
+	          <div class="modal-header">
+	              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+	              <h4 class="modal-title" id="myModalLabel">Login to YesDavao.com</h4>
+	          </div>
+	          <div class="modal-body">
+	              <div class="row">
+	                  <div class="col-xs-6">
+	                      <div class="well">
+	                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+	                              <div class="form-group">
+	                                  <label for="username" class="control-label">Username</label>
+	                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="juandelacruz@yesdavao.com">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div class="form-group">
+	                                  <label for="password" class="control-label">Password</label>
+	                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+	                              <div class="checkbox">
+	                                  <label>
+	                                      <input type="checkbox" name="remember" id="remember"> Remember login
+	                                  </label>
+	                                  <p class="help-block">(if this is a private computer)</p>
+	                              </div>
+	                              <button type="submit" class="btn btn-success btn-block">Login</button>
+	                              <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+	                          </form>
+	                      </div>
+	                  </div>
+	                  <div class="col-xs-6">
+	                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
+	                      <ul class="list-unstyled" style="line-height: 2">
+	                          <li><span class="fa fa-check text-success"></span> See all your bookings</li>
+	                          <li><span class="fa fa-check text-success"></span> Fast booking transaction</li>
+	                          <li><span class="fa fa-check text-success"></span> Upload your photos</li>
+	                          <li><span class="fa fa-check text-success"></span> Share your journey story</li>
+	                          <li><span class="fa fa-check text-success"></span> Win prizes</li>
+	                      </ul>
+	                      <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+		</div>
+	</div>
+
+<!-- MODAL END -->
+
+<!-- SCROLL TO TOP -->
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+<!-- SCROLL TO TOP END -->
+
+<script src="cap1.js"></script>
+
+</body>
+</html>

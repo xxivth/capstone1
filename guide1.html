@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cap1.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Josefin+Sans|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Ubuntu:400,500,700" rel="stylesheet">
+    <title>YesDavao!</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- HEADER / JUMBOTRON / CAROUSEL START -->
+	<div class="jumbotron jumbotron-fluid" id="header">
+	  <div class="container text-center">
+	    <h1 class="display-3">Explore Davao</h1>
+	    <p class="lead">Say <span id="font-red">yes</span> to new Adventures</p>
+	    <span><a href="tour-packages.html"><button type="button" class="btn btn-lg btn-primary">Tour Packages</button></a></span>
+	  </div>
+	</div>
+<!-- HEADER / JUMBOTRON / CAROUSEL END -->
+
+<!-- NAVBAR START -->
+<!-- SECONDARY NAV -->
+	<nav class="navbar navbar-default hidden-sm hidden-xs" id="secondary-nav">
+	  <div class="container-fluid">
+	      <form class="navbar-form navbar-right" id="nav-top">
+	  		<span>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">LOGIN</a>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">SIGN UP</a>
+	  		</span>
+	      </form>
+	  </div>
+	</nav>
+
+<!-- PRIMARY NAV -->
+	<nav class="navbar navbar-default" id="primary-nav">
+	  <div class="container-fluid" style="width: 90%;">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="home.html">
+	      	<img class="logo-nav" src="img/logo2.png">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="home.html">Home</a></li>
+	        <li><a href="tour-packages.html">Tour Packages</a></li>
+	        <li class="dropdown active">
+	          <a href="journals.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Journals <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="guides.html">Guides</a></li>
+	            <li><a href="journeys.html">Journeys</a></li>
+	            <li><a href="news.html">News</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="forum.html">Forum</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+	      </ul>
+
+			<form class="navbar-form navbar-right hidden-sm hidden-xs">
+		 		<div class="input-group" id="nav-search">
+				    <input type="text" class="form-control" placeholder="Search the website">
+				    <span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+		    	</div>
+		    </form>
+	        
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!-- NAVBAR END -->
+
+<!-- HEADER END -->
+
+	<div class="container" id="article">
+		<!-- <h1 class="title-page text-center">Guides</h1> -->
+		<hr>
+		<div class="row">
+<!-- BREADCRUMBS -->
+			<ol class="breadcrumb">
+			  <li><a href="#">YesDavao</a></li>
+			  <li><a href="#">Articles</a></li>
+			  <li><a href="#">Guides</a></li>
+			  <li class="active">The Bacon Travel Survival Guide</li>
+			</ol>
+
+			<div class="article-title">
+				<h1>The Bacon Travel Survival Guide</h1>
+				<ul class="list-inline">
+					<li><img class="author-img img-thumbnail img-circle" src="img/articles/jono-bacon.jpg">
+					</li>
+					<li>
+						<div id="author" class="author-name">
+							<p>
+							<span class="label label-primary label-lg">
+							Guide
+							</span>
+							<span class="label label-danger">
+							Travel
+							</span>
+							<br>
+							<a href="http://www.jonobacon.com/"></a>by JONO BACON
+							<br>
+							August 10, 2016 <span class="fa fa-creative-commons"></span><a href="http://www.jonobacon.com">jonobacon.com</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<hr>
+			</div>
+
+			<div class="container col-lg-9 col-md-9 main-col">
+<!-- ARTICLE TITLE/HEADING -->
+				<div class="article-head">
+					<figure>
+						<img class="article-img img-responsive img-thumbnail" src="img/articles/article1b.jpeg">
+						<figcaption class="caption">
+						<p><a href="http://www.unsplash.com"><span class="fa fa-creative-commons"></span> source: unsplash.com</a></p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="article-main">
+					<p class="lead vertical-line">I spend a fair bit of time traveling. Like many of you, this involves catching planes, trains, and automobiles, schlepping around between airports and hotels, figuring out conference centers, and more.
+					</p>
+
+					<p>Some years back I shared a room with my friend Pete Graner and was amused by how much crap he packed into his bag. Despite my mild mockery, whenever anyone needed something, Pete got pinged.
+					</p>
+
+					<p>Over the years I too have learned how to tame the road, and I want to share some lessons learned from how to pack the right items, book your travel wisely, stay connected, and more.
+					</p>
+
+					<img class="img-responsive img-thumbnail pull-right img-width300" src="img/articles/backpack.jpeg">
+
+					<h3>Build a Backpack</h3>
+
+					<p>Your backpack is your travel buddy. You will carry it everywhere and it will contain the most critical things you need on your journey. You want it to be comfortable, contain the essentials, and be ready for action whether in your hotel room, at the office, at an airport, or elsewhere.
+					</p>
+
+					<h3>The Bag</h3>
+
+					<p>First, you need to get the bag itself. Don’t skimp on cost here, this thing is going to get thrown around and trust me, you don’t want it to drop apart in an airport. Some essential features I look for in the bag:
+					</p>
+
+					<ul>
+						<li>Handles that can wrap around the handle on your suitcase. This means you can then attach it to the suitcase and not have to carry the bag when rolling your suitcase along.</li>
+						<li>Includes at least 4 different compartments, which I would use for:
+
+						<ol>
+							<li>Your laptop/tablet. Some bags can open up to make it easier for scanning laptops in X-Ray machines. Not essential, but nice to have.</li>
+							<li>Travel documents and important things (e.g. cash).</li>
+							<li>Your cables, chargers, and other peripherals/devices.</li>
+							<li>Medicines and other consumables.</li>
+						</ol></li>
+						<li>A means to attach a water bottle (e.g. an included hook) or pocket to strap it into.</li>
+						<li>Bonus side pockets for sunglasses, tissues, and other items are always nice.</li>
+					</ul>
+
+					<p>More than anything, ensure the bag is comfortable to wear. This thing is going to strapped to your back a lot, so make sure it feels comfortable to carry and doesn’t rub up against your shoulders.
+					</p>
+
+					<h3>Filling It</h3>
+
+					<p>OK, so we have a nice shiny bag. What do we put in it?</p>
+
+					<p>You want to ensure you carry items not just for your common tasks, but also for a few outliers too. Also, I recommend many of these items <em>always</em> live in your bag (even if you buy duplicate items for your home.) This then ensures that you don’t forget to pack them when you travel.</p>
+
+					<p>Here is a shopping list of what I carry with me, which could be inspiration for your own bag:</p>
+
+					<h3>Tech</h3>
+					
+					<img class="img-responsive img-thumbnail pull-right img-width300" src="img/articles/gadgets.jpeg">
+					
+
+					<ul>
+						<li><strong>Laptop</strong> – the jewel in the crown. This always comes with me.</li>
+						<li><strong>Other gadgets</strong> – I often also carry:
+
+						<ul>
+						<li>Tablet.</li>
+						<li>Kindle.</li>
+						</ul></li>
+						<li><strong>Laptop charger</strong> – obviously this is pretty essential if you want some juice in your laptop.</li>
+						<li><strong>Cables</strong> – I carry a bunch of cables, including:
+
+						<ul>
+						<li>2 x Micro-USB for phones and devices.</li>
+						<li>1 x Lightning for Apple devices.</li>
+						<li>Fitbit charging cable.</li>
+						</ul></li>
+						<li><strong>Multi-outlet adapter</strong> – a handy travel multi-outlet adapter where I can plug in 4 devices into a single outlet.</li>
+						<li><strong>USB outlets</strong> – these are those little gadgets with a USB socket that you plug into the wall. I carry at least two and they are used to juice my devices.</li>
+						<li><strong>Outlet adapters</strong> – these are the devices that convert between different power outlet types for different countries. I have been through dozens of these, so spend your money on quality. Be sure to buy one that supports every socket in the world. I always carry 2.</li>
+						<li><strong>Battery pack</strong> – this is one of those battery packs that you can use for charging your devices when out and about. Get a decent one (at least 12000mAh) with both the 1A and 2.1A ports so you can get a fast charge.</li>
+						<li><strong>USB sticks</strong> – I carry a couple of USB sticks around in case I need to transfer data between machines. I often have one as a bootable Ubuntu stick just in case I need to boot into Linux on another machine.</li>
+						<li><strong>Headphones</strong> – get some decent headphones (with a built in mic), you will be using them a lot. I use <a href="http://www.bose.com">Bose</a> headphones and love them. They may be more expensive, but totally worth it.</li>
+						<li><strong>Notebook and pen</strong> – always handy for scribbling down ideas, notes, and other musings. Also critical if you working with a company that doesn’t let you take a laptop into their office due to security measures – you will use this to take notes.</li>
+					</ul>
+
+					<h3>Personal Care</h3>
+
+					<p>For the ladies reading, adjust to taste (e.g. perfume, not cologne):</p>
+
+					<ul>
+						<li><strong>First aid kit</strong> – always have this just in case.</li>
+						<li><strong>Tissues</strong> – get a couple of pocket packs, useful for when you have the sniffles.</li>
+						<li><strong>Mints</strong> – no one likes travel breath, so this is a handy way of combating it when you have to run straight into a meeting after a flight.</li>
+						<li><strong>Hand sanitizer</strong> – other people are icky, wipe them off you.</li>
+						<li><strong>Headache tablets</strong> – get tablets your doctor recommends. I carry Aleve, but make sure the ones you get are safe for you (that you are not allergic to).</li>
+						<li><strong>Diarrhea medicine</strong> – always handy to have and critical for some further flung destinations. I carry Pepto-Bismol tablets.</li>
+						<li><strong>Cologne</strong> – I always like to smell good and usually carry two colognes with me. You can buy an atomizer that you can pre-fill with your cologne before you travel. Or, buy a travel size cologne.</li>
+						<li><strong>Deodorant</strong> – essential. You never know when you are going to be stuck in a hot place and you don’t want to get sweaty. I usually carry a roll on.</li>
+						<li><strong>Band-aids/plasters</strong> – I carry a few of these, not just in case I cut myself but also in case I get blisters on my feet when I have bought new shoes.</li>
+						<li><strong>Gas/heartburn medicine</strong> – always handy to have, particularly for some destinations with richer food.</li>
+						<li><strong>Hangover medicine</strong> – it has been known that I have the odd beer here or there on the road. Some scientific research has resulted in me carrying some <a href="http://www.forhangovers.com">Blowfish</a>. Be sure to check what you carry is safe (some medicines have ingredients you may be allergic to).</li>
+						<li><strong>Sunscreen</strong> –  as a pasty white chap, the sun can be my enemy. I carry a small spray can that I can lacquer myself with if I am going to be outside for a while.</li>
+						<li><strong>Water bottle</strong> – I always carry a quality water bottle. When traveling you should stay hydrated. Be sure to get a bottle that can strap to your backpack. If there is no means to strap it, buy a carabiner hook. Also, get a bottle where the spout is covered and the cover is lockable. This will ensure you don’t get germs on the spout and that water doesn’t spray out while walking.</li>
+					</ul>
+
+					<h3>Others:</h3>
+
+					<ul>
+						<li><strong>Cash</strong> – I always carry a small amount of bills and coins in my bag. The bills are handy for tipping and purchasing small items when you have run out of cash in your wallet. The coins are helpful for parking meters.</li>
+						<li><strong>Sunglasses</strong> – always handy in sunny climbs. I have a dedicated travel pair of sunnies that always lives in my bag so I never forget them.</li>
+					</ul>
+					<br>
+					<p>If you are traveling regularly, you should strive to make your overall journey as simple and effortless as possible. One easy way to do this is with expedited customs entry.
+					</p>
+				</div> <!-- ARTICLE MAIN END -->
+<!-- SOCIAL ICONS AND CREDITS -->
+				<ul class="list-inline social-icons">
+					<li><p>Share: </p></li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-facebook"></a> 256</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-twitter"></a> 24</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-google"></a> 16</li>
+					<li><a href="#" data-toggle="modal" data-target="#login-overlay" class="fa fa-instagram"></a> 25</li>
+				</ul>
+				<div class="article-credits">
+					<p><a href="http://www.jonobacon.com/2016/08/10/the-bacon-travel-survival-guide/">
+					<span class="fa fa-creative-commons"></span> source: jonobacon.com
+					</a></p>
+				</div>
+				<hr>
+<!-- PAGINATION -->
+				<nav aria-label="true">
+				  <ul class="pager">
+				    <li class="previous"><a href="#">Previous</a></li>
+				    <li class="next"><a href="#">Next</a></li>
+				  </ul>
+				</nav>
+		
+			</div> <!-- MAIN COLUMN END -->
+
+<!-- RIGHT COLUMN START -->
+			<div class="col-lg-3 col-md-3 right-col" id="sidebar">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Join Our Newsletter</h4>
+					</div>
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<input type="email" class="form-control" placeholder="Email address"></input>
+						<button type="submit" class="btn btn-default btn-primary btn-sm margin-t10">Subscribe</button>
+					</div>
+				</div>
+
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Recent Entries</h4>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/article6aa.jpg">
+						</div>
+						<div>
+							<h4><a href="news1.html">Philippines' most picturesque volcano erupts</a></h4>
+							<p>Albay province, Philippines - Mt Mayon - famous for its majestic, near-perfect cone shape...</p>
+							<small>
+							<span class="fa fa-user"><a href="http://www.aljazeera.com/profile/ezra-acayan.html">&nbsp; Ezra Acayan</a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="news1.html">&nbsp; January 25, 2018</a></span>
+							</small>
+						</div>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/article3aa.jpeg">
+						</div>
+						<div>
+							<h4><a href="blog2.html">PURE JOY IN DAVAO - part I</a></h4>
+							<p>Just right after the damaging typhoon Milenyo, Cathy, Marby and I were scheduled to take a three-day break in Davao City...</p>
+							<small>
+							<span class="fa fa-user"><a href="https://lekat-sera.travellerspoint.com/1/">&nbsp; Lekat-sera </a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="blog2.html">&nbsp; February 23, 2011</a></span>
+							</small>
+						</div>
+					</div>
+
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<div>
+							<img class="thumbnail img-responsive width-100p" src="img/articles/fooda.png">
+						</div>
+						<div>
+							<h4><a href="guide2.html">What to do in Davao? EAT EAT EAT!</a></h4>
+							<p>I visited the lovely Davao City and fell in love. My friends from Davao would usually boast how the people there are more disciplined than most, that the city was clean...</p>
+							<small>
+							<span class="fa fa-user"><a href="https://gingerscorner.travellerspoint.com/">&nbsp; GingerFerrer </a></span>
+							&nbsp;|&nbsp;
+							<span class="fa fa-calendar"><a href="guide2.html">&nbsp; February 11, 2016</a></span>
+							</small>
+						</div>
+					</div>
+				</div>
+
+			</div> <!-- RIGHT COLUMN END -->
+
+		</div>	<!-- ROW END -->
+	</div> <!-- CONTAINER END -->
+
+<!-- FOOTER SECTION -->
+
+	<footer>
+		<div class="footer">
+    		<div class="container">
+    			<div class="row">
+					<!-- <div class="col-md-3 text-center">
+						<img id="logo-footer" src="img/logo-sample.png">
+					</div> -->
+					<div class="col-md-6">
+						<h4></h4>
+						<div class="row">
+							<div class="col-md-3">
+								<img id="logo-footer" src="img/logo-sample.png">
+							</div>
+							<div class="col-md-9">
+								<p>Contents herein are freely sourced from partner websites that are made available under <a href="https://creativecommons.org/">Creative Commons Attribution CC0</a>.</p>
+								
+								<p>Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.
+								<span class="fa fa-creative-commons"></span>
+								</p>
+
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-md-3">
+						<h4>GET STARTED</h4>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="tour-packages.html">Tour Packages</a></li>
+							<li><a href="journals.html">Travel Journals</a></li>
+							<li><a href="forum.html">Forum</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<h4>SUBSCRIBE</h4>
+				    		<div class="center text-center">
+				                <p>Subscribe to our weekly Newsletter.</p>
+				                <form action="" method="post" role="form">
+				                    <div class="input-group">
+				                      <span class="input-group-addon">
+				                        <i class="fa fa-envelope"></i>
+				                      </span>
+				                      <input class="form-control" type="text" id="" name="" placeholder="juandelacruz@yesdavao.com">
+				                    </div>
+				                    <input required type="submit" value="Subscribe" class="btn btn-large btn-primary footer-button">
+				              </form>
+				            </div>   
+						</div>
+					</div>
+				</div>
+			</div> <!-- CLASS CONTAINER CLOSE -->
+		</div> <!-- CLASS FOOTER CLOSE -->
+	</footer>
+
+<!-- FOOTER SECTION END -->
+
+
+<!-- MODAL HERE -->
+
+ 	<!-- <button type="button" class="btn btn-info btn-lg" (data-toggle="modal" data-target="#login-overlay")>Open Modal</button> -->
+
+	<div id="login-overlay" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+	      <div class="modal-content">
+	          <div class="modal-header">
+	              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+	              <h4 class="modal-title" id="myModalLabel">Login to YesDavao.com</h4>
+	          </div>
+	          <div class="modal-body">
+	              <div class="row">
+	                  <div class="col-xs-6">
+	                      <div class="well">
+	                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+	                              <div class="form-group">
+	                                  <label for="username" class="control-label">Username</label>
+	                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="juandelacruz@yesdavao.com">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div class="form-group">
+	                                  <label for="password" class="control-label">Password</label>
+	                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+	                              <div class="checkbox">
+	                                  <label>
+	                                      <input type="checkbox" name="remember" id="remember"> Remember login
+	                                  </label>
+	                                  <p class="help-block">(if this is a private computer)</p>
+	                              </div>
+	                              <button type="submit" class="btn btn-success btn-block">Login</button>
+	                              <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+	                          </form>
+	                      </div>
+	                  </div>
+	                  <div class="col-xs-6">
+	                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
+	                      <ul class="list-unstyled" style="line-height: 2">
+	                          <li><span class="fa fa-check text-success"></span> See all your bookings</li>
+	                          <li><span class="fa fa-check text-success"></span> Fast booking transaction</li>
+	                          <li><span class="fa fa-check text-success"></span> Upload your photos</li>
+	                          <li><span class="fa fa-check text-success"></span> Share your journey story</li>
+	                          <li><span class="fa fa-check text-success"></span> Win prizes</li>
+	                      </ul>
+	                      <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+		</div>
+	</div>
+
+<!-- MODAL END -->
+
+<!-- SCROLL TO TOP -->
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+<!-- SCROLL TO TOP END -->
+
+<script src="cap1.js"></script>
+
+</body>
+</html>

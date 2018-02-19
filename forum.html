@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="cap1.css">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Josefin+Sans|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gudea|Ubuntu:400,500,700" rel="stylesheet">
+    <title>YesDavao!</title>
+</head>
+<body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- HEADER / JUMBOTRON / CAROUSEL START -->
+	<div class="jumbotron jumbotron-fluid" id="header">
+	  <div class="container text-center">
+	    <h1 class="display-3">Explore Davao</h1>
+	    <p class="lead">Say <span id="font-red">yes</span> to new Adventures</p>
+	    <span><a href="tour-packages.html"><button type="button" class="btn btn-lg btn-primary">Tour Packages</button></a></span>
+	  </div>
+	</div>
+<!-- HEADER / JUMBOTRON / CAROUSEL END -->
+
+<!-- NAVBAR START -->
+<!-- SECONDARY NAV -->
+	<nav class="navbar navbar-default hidden-sm hidden-xs" id="secondary-nav">
+	  <div class="container-fluid">
+	      <form class="navbar-form navbar-right" id="nav-top">
+	  		<span>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">LOGIN</a>
+	  			<a class="label label-primary" data-toggle="modal" data-target="#login-overlay" href="#">SIGN UP</a>
+	  		</span>
+	      </form>
+	  </div>
+	</nav>
+
+<!-- PRIMARY NAV -->
+	<nav class="navbar navbar-default" id="primary-nav">
+	  <div class="container-fluid" style="width: 90%;">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="home.html">
+	      	<img class="logo-nav" src="img/logo2.png">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="home.html">Home</a></li>
+	        <li><a href="tour-packages.html">Tour Packages</a></li>
+	        <li class="dropdown">
+	          <a href="journals.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Travel Journals <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="guides.html">Guides</a></li>
+	            <li><a href="journeys.html">Journeys</a></li>
+	            <li><a href="news.html">News</a></li>
+	          </ul>
+	        </li>
+	        <li class="active"><a href="forum.html">Forum</a></li>
+	        <li><a href="contact.html">Contact</a></li>
+	      </ul>
+
+			<form class="navbar-form navbar-right hidden-sm hidden-xs">
+		 		<div class="input-group" id="nav-search">
+				    <input type="text" class="form-control" placeholder="Search the website">
+				    <span class="input-group-addon"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+		    	</div>
+		    </form>
+	        
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+<!-- NAVBAR END -->
+
+<!-- HEADER END -->
+
+	<div class="container-fluid" id="forum">
+		<h1 class="title-page text-center">Community Forum</h1>
+		<hr>
+		<div class="row">
+			<div class="container col-lg-9 col-md-9 main-col">
+			  <div class="panel-group">
+			    <div class="panel panel-default">
+			      <div class="panel-heading">
+			        <h3 class="panel-title">
+			          <a data-toggle="collapse" href="#collapse1" id="panel-title">Welcome</a>
+			          <a href="#collapse1" id="toggle-forum" class="fa fa-arrow-down" data-toggle="collapse" data-toggle="tooltip" title="Toggle Category"></a>
+			        </h3>
+			      </div>
+<!-- FORUM TOPIC 1 -->
+			      <div id="collapse1" class="panel-collapse collapse in">
+				      <ol class="list-inline">
+				      	<li class="width-10">
+				      		<div>
+				      			<i class="fa fa-comments"></i>
+				      		</div>
+				      	<li class="width-50">
+				      		<div>
+				      			<h4 class="forum-titles">
+				      			<a href="#" data-toggle="modal" data-target="#login-overlay">Community FAQs</a>
+				      			</h4>
+				      			<p>Community guidelines and our terms of use. Here's what friendly behavior we expect from you.</p>
+				      		</div>
+				      	</li>
+				      	<li class="width-15 hidden-sm hidden-xs">
+				      		<div class="text-center">
+				      			<dl>
+				      				<dt class="post-number">275</dt>
+				      				<dt>posts</dt>
+				      			</dl>
+				      		</div>
+				      	</li>
+				      	<ul class="width-20 text-center hidden-sm hidden-xs">
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">Backpackers 101</a></li>
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">By: Dora Explorer</a></li>
+				      		<li class="label label-default">February 3</li>
+				      	</ul>
+				      </ol>
+	<!-- FORUM TOPIC 2 -->
+				      <ol class="list-inline">
+				      	<li class="width-10">
+				      		<div>
+				      			<i class="fa fa-comments"></i>
+				      		</div>
+				      	<li class="width-50">
+				      		<div>
+				      			<h4 class="forum-titles">
+				      			<a href="#" data-toggle="modal" data-target="#login-overlay">Introductions</a>
+				      			</h4>
+				      			<p>Introduce yourself to your fellow travelers! Say hello, share travels, your dreams, and get to know other!</p>
+				      		</div>
+				      	</li>
+				      	<li class="width-15 hidden-sm hidden-xs">
+				      		<div class="text-center">
+				      			<dl>
+				      				<dt class="post-number">1422</dt>
+				      				<dt>posts</dt>
+				      			</dl>
+				      		</div>
+				      	</li>
+				      	<ul class="width-20 text-center hidden-sm hidden-xs">
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">Backpackers 101</a></li>
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">By: Dora Explorer</a></li>
+				      		<li class="label label-default">February 3</li>
+				      	</ul>
+				      </ol>
+	<!-- FORUM TOPIC 3 -->
+				      <ol class="list-inline">
+				      	<li class="width-10">
+				      		<div>
+				      			<i class="fa fa-comments"></i>
+				      		</div>
+				      	<li class="width-50">
+				      		<div>
+				      			<h4 class="forum-titles">
+				      			<a href="#" data-toggle="modal" data-target="#login-overlay">Travel Companions</a>
+				      			</h4>
+				      			<p>Looking for people to travel with? Want to organize a meet-up? Leave a post here!</p>
+				      		</div>
+				      	</li>
+				      	<li class="width-15 hidden-sm hidden-xs">
+				      		<div class="text-center">
+				      			<dl>
+				      				<dt class="post-number">584</dt>
+				      				<dt>posts</dt>
+				      			</dl>
+				      		</div>
+				      	</li>
+				      	<ul class="width-20 text-center hidden-sm hidden-xs">
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">Backpackers 101</a></li>
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">By: Dora Explorer</a></li>
+				      		<li class="label label-default">February 3</li>
+				      	</ul>
+				      </ol>
+	<!-- FORUM TOPIC 4 -->
+				      <ol class="list-inline">
+				      	<li class="width-10">
+				      		<div>
+				      			<i class="fa fa-comments"></i>
+				      		</div>
+				      	<li class="width-50">
+				      		<div>
+				      			<h4 class="forum-titles">
+				      			<a href="#" data-toggle="modal" data-target="#login-overlay">The Water Cooler</a>
+				      			</h4>
+				      			<p>All things non-travel related!! PLEASE DON'T POST ABOUT TRAVEL IN HERE. FIND THE APPROPRIATE THREAD!</p>
+				      		</div>
+				      	</li>
+				      	<li class="width-15 hidden-sm hidden-xs">
+				      		<div class="text-center">
+				      			<dl>
+				      				<dt class="post-number">688</dt>
+				      				<dt>posts</dt>
+				      			</dl>
+				      		</div>
+				      	</li>
+				      	<ul class="width-20 text-center hidden-sm hidden-xs">
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">Backpackers 101</a></li>
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">By: Dora Explorer</a></li>
+				      		<li class="label label-default">February 3</li>
+				      	</ul>
+				      </ol>
+	<!-- FORUM TOPIC 5 -->
+				      <ol class="list-inline">
+				      	<li class="width-10">
+				      		<div>
+				      			<i class="fa fa-comments"></i>
+				      		</div>
+				      	<li class="width-50">
+				      		<div>
+				      			<h4 class="forum-titles">
+				      			<a href="#" data-toggle="modal" data-target="#login-overlay">Miscellaneous Travel</a>
+				      			</h4>
+				      			<p>Want to talk about your favorite food? Song? Experience? This is the thread to sit back and swap stories!</p>
+				      		</div>
+				      	</li>
+				      	<li class="width-15 hidden-sm hidden-xs">
+				      		<div class="text-center">
+				      			<dl>
+				      				<dt class="post-number">1724</dt>
+				      				<dt>posts</dt>
+				      			</dl>
+				      		</div>
+				      	</li>
+				      	<ul class="width-20 text-center hidden-sm hidden-xs">
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">Backpackers 101</a></li>
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">By: Dora Explorer</a></li>
+				      		<li class="label label-default">February 3</li>
+				      	</ul>
+				      </ol>
+	<!-- FORUM TOPIC 6 -->
+				      <ol class="list-inline">
+				      	<li class="width-10">
+				      		<div>
+				      			<i class="fa fa-comments"></i>
+				      		</div>
+				      	<li class="width-50">
+				      		<div>
+				      			<h4 class="forum-titles">
+				      			<a href="#" data-toggle="modal" data-target="#login-overlay">Book Club</a>
+				      			</h4>
+				      			<p>Discuss all your favorite travel books here! We host monthly hangouts too. You can get a monthly book list sent to you too:</p>
+				      		</div>
+				      	</li>
+				      	<li class="width-15 hidden-sm hidden-xs">
+				      		<div class="text-center">
+				      			<dl>
+				      				<dt class="post-number">354</dt>
+				      				<dt>posts</dt>
+				      			</dl>
+				      		</div>
+				      	</li>
+				      	<ul class="width-20 text-center hidden-sm hidden-xs">
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">Backpackers 101</a></li>
+				      		<li><a href="#" data-toggle="modal" data-target="#login-overlay">By: Dora Explorer</a></li>
+				      		<li class="label label-default">February 3</li>
+				      	</ul>
+				      </ol>
+			      </div>
+			    </div>
+			  </div>
+			</div> <!-- MAIN COLUMN END -->
+
+<!-- RIGHT COLUMN START -->
+			<div class="col-lg-3 col-md-3 right-col">
+				<div class="panel panel-default text-center">
+				  <!-- Default panel contents -->
+				  <div class="panel-heading">
+				  	<h4>Recent Topics</h4>
+				  </div>
+					  <ul class="list-group">
+<!-- RECENT TOPICS 1 -->
+						<li class="list-group-item">
+					    	<div class="media">
+							  <div class="media-left">
+							    <a href="#" data-toggle="modal" data-target="#login-overlay">
+							      <img class="media-object img-topic img-circle" src="img/sidebar/discovery.jpg" alt="">
+							    </a>
+							  </div>
+							  <div class="media-body pright55 text-left">
+							  	<span class="badge side-badge">4</span>
+							    <p><a href="#" data-toggle="modal" data-target="#login-overlay">Fun fact: Durian is the king of fruits</a>
+							    <br>
+							    <i class="side-by">By: Discovery Channel <br> Started 5 hours ago</i>
+							    </p>
+							  </div>
+							</div>
+					    </li>
+<!-- RECENT TOPICS 2 -->
+						<li class="list-group-item">
+					    	<div class="media">
+							  <div class="media-left">
+							    <a href="#" data-toggle="modal" data-target="#login-overlay">
+							      <img class="media-object img-topic img-circle" src="img/sidebar/nat-geo.jpg" alt="">
+							    </a>
+							  </div>
+							  <div class="media-body pright55 text-left">
+							  	<span class="badge side-badge">4</span>
+							    <p><a href="#" data-toggle="modal" data-target="#login-overlay">Are there tigers in Davao?</a>
+							    <br>
+							    <i class="side-by">By: Nat Geo <br> Started 5 hours ago</i>
+							    </p>
+							  </div>
+							</div>
+					    </li>
+<!-- RECENT TOPICS 3 -->
+					    <li class="list-group-item">
+					    	<div class="media">
+							  <div class="media-left">
+							    <a href="#" data-toggle="modal" data-target="#login-overlay">
+							      <img class="media-object img-topic img-circle" src="img/sidebar/north-face.png" alt="">
+							    </a>
+							  </div>
+							  <div class="media-body pright55 text-left">
+							  	<span class="badge side-badge">4</span>
+							    <p><a href="#" data-toggle="modal" data-target="#login-overlay">Never Stop Exploring</a>
+							    <br>
+							    <i class="side-by">By: North Face <br> Started 5 hours ago</i>
+							    </p>
+							  </div>
+							</div>
+					    </li>
+<!-- RECENT TOPICS 4 -->
+						<li class="list-group-item">
+					    	<div class="media">
+							  <div class="media-left">
+							    <a href="#" data-toggle="modal" data-target="#login-overlay">
+							      <img class="media-object img-topic img-circle" src="img/sidebar/history.png" alt="">
+							    </a>
+							  </div>
+							  <div class="media-body pright55 text-left">
+							  	<span class="badge side-badge">4</span>
+							    <p><a href="#" data-toggle="modal" data-target="#login-overlay">Davao City is home to 11 ethnoliguistic groups</a>
+							    <br>
+							    <i class="side-by">By: History Channel <br> Started 5 hours ago</i>
+							    </p>
+							  </div>
+							</div>
+					    </li> 
+<!-- RECENT TOPICS 5 -->
+					    <li class="list-group-item">
+					    	<div class="media">
+							  <div class="media-left">
+							    <a href="#" data-toggle="modal" data-target="#login-overlay">
+							      <img class="media-object img-topic img-circle" src="img/sidebar/dora.jpg" alt="">
+							    </a>
+							  </div>
+							  <div class="media-body pright55 text-left">
+							  	<span class="badge side-badge">4</span>
+							    <p><a href="#" data-toggle="modal" data-target="#login-overlay">Come on! ¡Vamonos!</a>
+							    <br>
+							    <i class="side-by">By: Dora <br> Started 5 hours ago</i>
+							    </p>
+							  </div>
+							</div>
+					    </li>
+<!-- RECENT TOPICS END -->
+<!-- VIEW MORE TOPICS -->
+					    <li class="list-group-item" id="topic-more">
+							<div class="panel-heading no-bg">
+					        <a data-toggle="collapse" href="#view-more"><h3 class="panel-title">View More</h3></a>
+						  	</div>
+						    <div id="view-more" class="panel-collapse collapse">
+						      <ul class="list-group">
+<!-- VIEW MORE 2 -->
+						      	<li class="list-group-item">
+							    	<div class="media">
+									  <div class="media-left">
+									    <a href="#" data-toggle="modal" data-target="#login-overlay">
+									      <img class="media-object img-topic img-circle" src="img/sidebar/boots.jpg" alt="">
+									    </a>
+									  </div>
+									  <div class="media-body pright55 text-left">
+									  	<span class="badge side-badge">4</span>
+									    <p><a href="#" data-toggle="modal" data-target="#login-overlay">To help Dora climb, you gotta say subida. Can you say subida?</a>
+									    <br>
+									    <i class="side-by">By: Boots <br> Started 5 hours ago</i>
+									    </p>
+									  </div>
+									</div>
+							    </li>
+<!-- VIEW MORE 2 -->
+							    <li class="list-group-item">
+							    	<div class="media">
+									  <div class="media-left">
+									    <a href="#" data-toggle="modal" data-target="#login-overlay">
+									      <img class="media-object img-topic img-circle" src="img/sidebar/backpack.png" alt="">
+									    </a>
+									  </div>
+									  <div class="media-body pright55 text-left">
+									  	<span class="badge side-badge">4</span>
+									    <p><a href="#" data-toggle="modal" data-target="#login-overlay">Yum, yum, yum, yum, yum. Delicioso!</a>
+									    <br>
+									    <i class="side-by">By: Backpack <br> Started 5 hours ago</i>
+									    </p>
+									  </div>
+									</div>
+							    </li>
+							  </ul>
+							</div>
+						</li>
+					  </ul>
+				</div>
+
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Join Our Newsletter</h4>
+					</div>
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<input type="email" class="form-control" placeholder="Email address"></input>
+						<br>
+						<button type="submit" class="btn btn-default btn-primary btn-sm">Submit</button>
+					</div>
+				</div>
+
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4>Categories</h4>
+					</div>
+					<div class="panel-body panel-default text-center">
+						<hr>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#login-overlay">Open Modal</button>
+					</div>
+				</div>
+			</div> <!-- RIGHT COLUMN END -->
+
+		</div>	<!-- ROW END -->
+	</div> <!-- CONTAINER END -->
+
+<!-- FOOTER SECTION -->
+
+	<footer>
+		<div class="footer">
+    		<div class="container">
+    			<div class="row">
+					<!-- <div class="col-md-3 text-center">
+						<img id="logo-footer" src="img/logo-sample.png">
+					</div> -->
+					<div class="col-md-6">
+						<h4></h4>
+						<div class="row">
+							<div class="col-md-3">
+								<img id="logo-footer" src="img/logo-sample.png">
+							</div>
+							<div class="col-md-9">
+								<p>Contents herein are freely sourced from partner websites that are made available under <a href="https://creativecommons.org/">Creative Commons Attribution CC0</a>.</p>
+								
+								<p>Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.
+								<span class="fa fa-creative-commons"></span>
+								</p>
+
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-md-3">
+						<h4>GET STARTED</h4>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="tour-packages.html">Tour Packages</a></li>
+							<li><a href="journals.html">Travel Journals</a></li>
+							<li><a href="forum.html">Forum</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<h4>SUBSCRIBE</h4>
+				    		<div class="center text-center">
+				                <p>Subscribe to our weekly Newsletter.</p>
+				                <form action="" method="post" role="form">
+				                    <div class="input-group">
+				                      <span class="input-group-addon">
+				                        <i class="fa fa-envelope"></i>
+				                      </span>
+				                      <input class="form-control" type="text" id="" name="" placeholder="juandelacruz@yesdavao.com">
+				                    </div>
+				                    <input type="submit" value="Subscribe" class="btn btn-large btn-primary footer-button">
+				              </form>
+				            </div>   
+						</div>
+					</div>
+				</div>
+			</div> <!-- CLASS CONTAINER CLOSE -->
+		</div> <!-- CLASS FOOTER CLOSE -->
+	</footer>
+
+<!-- FOOTER SECTION END -->
+
+
+<!-- MODAL HERE -->
+
+ 	<!-- <button type="button" class="btn btn-info btn-lg" (data-toggle="modal" data-target="#login-overlay")>Open Modal</button> -->
+
+	<div id="login-overlay" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+	      <div class="modal-content">
+	          <div class="modal-header">
+	              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+	              <h4 class="modal-title" id="myModalLabel">Login to YesDavao.com</h4>
+	          </div>
+	          <div class="modal-body">
+	              <div class="row">
+	                  <div class="col-xs-6">
+	                      <div class="well">
+	                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+	                              <div class="form-group">
+	                                  <label for="username" class="control-label">Username</label>
+	                                  <input type="text" class="form-control" id="username" name="username" value="" required="" title="Please enter you username" placeholder="juandelacruz@yesdavao.com">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div class="form-group">
+	                                  <label for="password" class="control-label">Password</label>
+	                                  <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+	                                  <span class="help-block"></span>
+	                              </div>
+	                              <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
+	                              <div class="checkbox">
+	                                  <label>
+	                                      <input type="checkbox" name="remember" id="remember"> Remember login
+	                                  </label>
+	                                  <p class="help-block">(if this is a private computer)</p>
+	                              </div>
+	                              <button type="submit" class="btn btn-success btn-block">Login</button>
+	                              <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+	                          </form>
+	                      </div>
+	                  </div>
+	                  <div class="col-xs-6">
+	                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
+	                      <ul class="list-unstyled" style="line-height: 2">
+	                          <li><span class="fa fa-check text-success"></span> See all your bookings</li>
+	                          <li><span class="fa fa-check text-success"></span> Fast booking transaction</li>
+	                          <li><span class="fa fa-check text-success"></span> Upload your photos</li>
+	                          <li><span class="fa fa-check text-success"></span> Share your journey story</li>
+	                          <li><span class="fa fa-check text-success"></span> Win prizes</li>
+	                      </ul>
+	                      <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+		</div>
+	</div>
+
+<!-- MODAL END -->
+
+<!-- SCROLL TO TOP -->
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+<!-- SCROLL TO TOP END -->
+
+<script src="cap1.js"></script>
+
+</body>
+</html>
